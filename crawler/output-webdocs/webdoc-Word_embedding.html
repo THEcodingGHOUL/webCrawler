@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Word embedding - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"XqYx9gpAICkAAIRSljcAAAAG","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Word_embedding","wgTitle":"Word embedding","wgCurRevisionId":951683288,"wgRevisionId":951683288,"wgArticleId":43561218,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: ref=harv","CS1: long volume value","Language modeling","Artificial neural networks","Natural language processing","Computational linguistics"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Word_embedding","wgRelevantArticleId":43561218,"wgIsProbablyEditable":
+!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q18395344","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","skins.vector.styles.legacy":"ready","wikibase.client.init":"ready",
+"ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.startup","skins.vector.js","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.28"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/1200px-Kernel_Machine.svg.png"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Word_embedding&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Word_embedding&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Word_embedding"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Word_embedding rootpage-Word_embedding skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Word embedding</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em"><a href="/wiki/Machine_learning" title="Machine learning">Machine learning</a> and<br /><a href="/wiki/Data_mining" title="Data mining">data mining</a></th></tr><tr><td style="padding:0.2em 0 0.4em;padding:0.25em 0.25em 0.75em;"><a href="/wiki/File:Kernel_Machine.svg" class="image"><img alt="Kernel Machine.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/220px-Kernel_Machine.svg.png" decoding="async" width="220" height="100" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/330px-Kernel_Machine.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/440px-Kernel_Machine.svg.png 2x" data-file-width="512" data-file-height="233" /></a></td></tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left">Problems</div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Statistical_classification" title="Statistical classification">Classification</a></li>
+<li><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></li>
+<li><a href="/wiki/Regression_analysis" title="Regression analysis">Regression</a></li>
+<li><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></li>
+<li><a href="/wiki/Automated_machine_learning" title="Automated machine learning">AutoML</a></li>
+<li><a href="/wiki/Association_rule_learning" title="Association rule learning">Association rules</a></li>
+<li><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></li>
+<li><a href="/wiki/Structured_prediction" title="Structured prediction">Structured prediction</a></li>
+<li><a href="/wiki/Feature_engineering" title="Feature engineering">Feature engineering</a></li>
+<li><a href="/wiki/Feature_learning" title="Feature learning">Feature learning</a></li>
+<li><a href="/wiki/Online_machine_learning" title="Online machine learning">Online learning</a></li>
+<li><a href="/wiki/Semi-supervised_learning" title="Semi-supervised learning">Semi-supervised learning</a></li>
+<li><a href="/wiki/Unsupervised_learning" title="Unsupervised learning">Unsupervised learning</a></li>
+<li><a href="/wiki/Learning_to_rank" title="Learning to rank">Learning to rank</a></li>
+<li><a href="/wiki/Grammar_induction" title="Grammar induction">Grammar induction</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><div style="padding:0.1em 0;line-height:1.2em;"><a href="/wiki/Supervised_learning" title="Supervised learning">Supervised learning</a><br /><style data-mw-deduplicate="TemplateStyles:r886047488">.mw-parser-output .nobold{font-weight:normal}</style><span class="nobold"><span style="font-size:85%;">(<b><a href="/wiki/Statistical_classification" title="Statistical classification">classification</a></b>&#160;&#8226;&#32;<b><a href="/wiki/Regression_analysis" title="Regression analysis">regression</a></b>)</span></span> </div></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Decision_tree_learning" title="Decision tree learning">Decision trees</a></li>
+<li><a href="/wiki/Ensemble_learning" title="Ensemble learning">Ensembles</a>
+<ul><li><a href="/wiki/Bootstrap_aggregating" title="Bootstrap aggregating">Bagging</a></li>
+<li><a href="/wiki/Boosting_(machine_learning)" title="Boosting (machine learning)">Boosting</a></li>
+<li><a href="/wiki/Random_forest" title="Random forest">Random forest</a></li></ul></li>
+<li><a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm"><i>k</i>-NN</a></li>
+<li><a href="/wiki/Linear_regression" title="Linear regression">Linear regression</a></li>
+<li><a href="/wiki/Naive_Bayes_classifier" title="Naive Bayes classifier">Naive Bayes</a></li>
+<li><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural networks</a></li>
+<li><a href="/wiki/Logistic_regression" title="Logistic regression">Logistic regression</a></li>
+<li><a href="/wiki/Perceptron" title="Perceptron">Perceptron</a></li>
+<li><a href="/wiki/Relevance_vector_machine" title="Relevance vector machine">Relevance vector machine (RVM)</a></li>
+<li><a href="/wiki/Support-vector_machine" title="Support-vector machine">Support vector machine (SVM)</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/BIRCH" title="BIRCH">BIRCH</a></li>
+<li><a href="/wiki/CURE_data_clustering_algorithm" class="mw-redirect" title="CURE data clustering algorithm">CURE</a></li>
+<li><a href="/wiki/Hierarchical_clustering" title="Hierarchical clustering">Hierarchical</a></li>
+<li><a href="/wiki/K-means_clustering" title="K-means clustering"><i>k</i>-means</a></li>
+<li><a href="/wiki/Expectation%E2%80%93maximization_algorithm" title="Expectation–maximization algorithm">Expectation–maximization (EM)</a></li>
+<li><br /><a href="/wiki/DBSCAN" title="DBSCAN">DBSCAN</a></li>
+<li><a href="/wiki/OPTICS_algorithm" title="OPTICS algorithm">OPTICS</a></li>
+<li><a href="/wiki/Mean-shift" class="mw-redirect" title="Mean-shift">Mean-shift</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Dimensionality_reduction" title="Dimensionality reduction">Dimensionality reduction</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Factor_analysis" title="Factor analysis">Factor analysis</a></li>
+<li><a href="/wiki/Canonical_correlation" title="Canonical correlation">CCA</a></li>
+<li><a href="/wiki/Independent_component_analysis" title="Independent component analysis">ICA</a></li>
+<li><a href="/wiki/Linear_discriminant_analysis" title="Linear discriminant analysis">LDA</a></li>
+<li><a href="/wiki/Non-negative_matrix_factorization" title="Non-negative matrix factorization">NMF</a></li>
+<li><a href="/wiki/Principal_component_analysis" title="Principal component analysis">PCA</a></li>
+<li><a href="/wiki/Proper_generalized_decomposition" title="Proper generalized decomposition">PGD</a></li>
+<li><a href="/wiki/T-distributed_stochastic_neighbor_embedding" title="T-distributed stochastic neighbor embedding">t-SNE</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Structured_prediction" title="Structured prediction">Structured prediction</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Graphical_model" title="Graphical model">Graphical models</a>
+<ul><li><a href="/wiki/Bayesian_network" title="Bayesian network">Bayes net</a></li>
+<li><a href="/wiki/Conditional_random_field" title="Conditional random field">Conditional random field</a></li>
+<li><a href="/wiki/Hidden_Markov_model" title="Hidden Markov model">Hidden Markov</a></li></ul></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/K-nearest_neighbors_classification" class="mw-redirect" title="K-nearest neighbors classification"><i>k</i>-NN</a></li>
+<li><a href="/wiki/Local_outlier_factor" title="Local outlier factor">Local outlier factor</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Autoencoder" title="Autoencoder">Autoencoder</a></li>
+<li><a href="/wiki/Deep_learning" title="Deep learning">Deep learning</a></li>
+<li><a href="/wiki/DeepDream" title="DeepDream">DeepDream</a></li>
+<li><a href="/wiki/Multilayer_perceptron" title="Multilayer perceptron">Multilayer perceptron</a></li>
+<li><a href="/wiki/Recurrent_neural_network" title="Recurrent neural network">RNN</a>
+<ul><li><a href="/wiki/Long_short-term_memory" title="Long short-term memory">LSTM</a></li>
+<li><a href="/wiki/Gated_recurrent_unit" title="Gated recurrent unit">GRU</a></li></ul></li>
+<li><a href="/wiki/Restricted_Boltzmann_machine" title="Restricted Boltzmann machine">Restricted Boltzmann machine</a></li>
+<li><a href="/wiki/Generative_adversarial_network" title="Generative adversarial network">GAN</a></li>
+<li><a href="/wiki/Self-organizing_map" title="Self-organizing map">SOM</a></li>
+<li><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a>
+<ul><li><a href="/wiki/U-Net" title="U-Net">U-Net</a></li></ul></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Q-learning" title="Q-learning">Q-learning</a></li>
+<li><a href="/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action" title="State–action–reward–state–action">SARSA</a></li>
+<li><a href="/wiki/Temporal_difference_learning" title="Temporal difference learning">Temporal difference (TD)</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left">Theory</div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Bias%E2%80%93variance_dilemma" class="mw-redirect" title="Bias–variance dilemma">Bias–variance dilemma</a></li>
+<li><a href="/wiki/Computational_learning_theory" title="Computational learning theory">Computational learning theory</a></li>
+<li><a href="/wiki/Empirical_risk_minimization" title="Empirical risk minimization">Empirical risk minimization</a></li>
+<li><a href="/wiki/Occam_learning" title="Occam learning">Occam learning</a></li>
+<li><a href="/wiki/Probably_approximately_correct_learning" title="Probably approximately correct learning">PAC learning</a></li>
+<li><a href="/wiki/Statistical_learning_theory" title="Statistical learning theory">Statistical learning</a></li>
+<li><a href="/wiki/Vapnik%E2%80%93Chervonenkis_theory" title="Vapnik–Chervonenkis theory">VC theory</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left">Machine-learning venues</div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Conference_on_Neural_Information_Processing_Systems" title="Conference on Neural Information Processing Systems">NeurIPS</a></li>
+<li><a href="/wiki/International_Conference_on_Machine_Learning" title="International Conference on Machine Learning">ICML</a></li>
+<li><a href="/wiki/Machine_Learning_(journal)" title="Machine Learning (journal)">ML</a></li>
+<li><a href="/wiki/Journal_of_Machine_Learning_Research" title="Journal of Machine Learning Research">JMLR</a></li>
+<li><a rel="nofollow" class="external text" href="https://arxiv.org/list/cs.LG/recent">ArXiv:cs.LG</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left"><a href="/wiki/Glossary_of_artificial_intelligence" title="Glossary of artificial intelligence">Glossary of artificial intelligence</a></div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/Glossary_of_artificial_intelligence" title="Glossary of artificial intelligence">Glossary of artificial intelligence</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="padding:0 0.1em 0.4em">
+<div class="NavFrame collapsed" style="border:none;padding:0"><div class="NavHead" style="font-size:105%;background:transparent;text-align:left">Related articles</div><div class="NavContent" style="font-size:105%;padding:0.2em 0 0.4em;text-align:center"><div class="hlist">
+<ul><li><a href="/wiki/List_of_datasets_for_machine-learning_research" title="List of datasets for machine-learning research">List of datasets for machine-learning research</a></li>
+<li><a href="/wiki/Outline_of_machine_learning" title="Outline of machine learning">Outline of machine learning</a></li></ul>
+</div></div></div></td>
+</tr><tr><td style="text-align:right;font-size:115%;padding-top: 0.6em;"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Machine_learning_bar" title="Template:Machine learning bar"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Machine_learning_bar" title="Template talk:Machine learning bar"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Machine_learning_bar&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p><b>Word embedding</b> is the collective name for a set of <a href="/wiki/Language_model" title="Language model">language modeling</a> and <a href="/wiki/Feature_learning" title="Feature learning">feature learning</a> techniques in <a href="/wiki/Natural_language_processing" title="Natural language processing">natural language processing</a> (NLP) where words or phrases from the vocabulary are mapped to <a href="/wiki/Vector_(mathematics)" class="mw-redirect" title="Vector (mathematics)">vectors</a> of <a href="/wiki/Real_numbers" class="mw-redirect" title="Real numbers">real numbers</a>. Conceptually it involves a mathematical <a href="/wiki/Embedding" title="Embedding">embedding</a> from a space with many dimensions per word to a continuous <a href="/wiki/Vector_space" title="Vector space">vector space</a> with a much lower dimension.
+</p><p>Methods to generate this mapping include <a href="/wiki/Neural_net_language_model" class="mw-redirect" title="Neural net language model">neural networks</a>,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> <a href="/wiki/Dimensionality_reduction" title="Dimensionality reduction">dimensionality reduction</a> on the word <a href="/wiki/Co-occurrence_matrix" title="Co-occurrence matrix">co-occurrence matrix</a>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> probabilistic models,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> explainable knowledge base method,<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> and explicit representation in terms of the context in which words appear.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p><p>Word and phrase embeddings, when used as the underlying input representation, have been shown to boost the performance in NLP tasks such as <a href="/wiki/Syntactic_parsing" class="mw-redirect" title="Syntactic parsing">syntactic parsing</a><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> and <a href="/wiki/Sentiment_analysis" title="Sentiment analysis">sentiment analysis</a>.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Development_of_technique"><span class="tocnumber">1</span> <span class="toctext">Development of technique</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Limitations"><span class="tocnumber">2</span> <span class="toctext">Limitations</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#For_biological_sequences:_BioVectors"><span class="tocnumber">3</span> <span class="toctext">For biological sequences: BioVectors</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Thought_vectors"><span class="tocnumber">4</span> <span class="toctext">Thought vectors</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Software"><span class="tocnumber">5</span> <span class="toctext">Software</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Examples_of_application"><span class="tocnumber">5.1</span> <span class="toctext">Examples of application</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Development_of_technique">Development of technique</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Word_embedding&amp;action=edit&amp;section=1" title="Edit section: Development of technique">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="/wiki/Linguistics" title="Linguistics">linguistics</a> word embeddings were discussed in the research area of <a href="/wiki/Distributional_semantics" title="Distributional semantics">distributional semantics</a>. It aims to quantify and categorize semantic similarities between linguistic items based on their distributional properties in large samples of language data.  The underlying idea that "a word is characterized by the company it keeps" was popularized by <a href="/wiki/J._R._Firth" class="mw-redirect" title="J. R. Firth">Firth</a>.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup>
+</p><p>The technique of representing words as vectors has roots in the 1960s with the development of the <a href="/wiki/Vector_space_model" title="Vector space model">vector space model</a> for information retrieval. Reducing the number of dimensions using <a href="/wiki/Singular-value_decomposition" class="mw-redirect" title="Singular-value decomposition">singular value decomposition</a> then led to the introduction of <a href="/wiki/Latent_semantic_analysis" title="Latent semantic analysis">latent semantic analysis</a> in the late 1980s.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> In 2000 <a href="/wiki/Yoshua_Bengio" title="Yoshua Bengio">Bengio</a> et al. provided in a series of papers the "Neural probabilistic language models" to reduce the high dimensionality of words representations in contexts by "learning a distributed representation for words". (Bengio et al., 2003).<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> Word embeddings come in two different styles, one in which words are expressed as vectors of co-occurring words, and another in which words are expressed as vectors of linguistic contexts in which the words occur; these different styles are studied in (Lavelli et al., 2004).<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> Roweis and Saul published in <i>Science</i> how to use "locally linear embedding" (LLE) to discover representations of high dimensional data structures.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup> The area developed gradually and really took off after 2010, partly because important advances had been made since then on the quality of vectors and the training speed of the model.
+</p><p>There are many branches and many research groups working on word embeddings. In 2013, a team at <a href="/wiki/Google" title="Google">Google</a> led by Tomas Mikolov created <a href="/wiki/Word2vec" title="Word2vec">word2vec</a>, a word embedding toolkit which can train vector space models faster than the previous approaches.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> Most new word embedding techniques rely on a <a href="/wiki/Neural_network" title="Neural network">neural network</a> architecture instead of more traditional <a href="/wiki/N-gram" title="N-gram">n-gram</a> models and <a href="/wiki/Unsupervised_learning" title="Unsupervised learning">unsupervised learning</a>.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Limitations">Limitations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Word_embedding&amp;action=edit&amp;section=2" title="Edit section: Limitations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>One of the main limitations of word embeddings (word <a href="/wiki/Vector_space_model" title="Vector space model">vector space models</a> in general) is that words with multiple meanings are conflated into a single representation (a single vector in the semantic space). In other words, polysemy and homonymy are not handled properly. For example, in the sentence “The club I tried yesterday was great!” it is not clear if the term <i>club</i> is related to the word sense of a  <i><a href="/wiki/Club_sandwich" title="Club sandwich">club sandwich</a></i>, <i><a href="/wiki/Baseball" title="Baseball">baseball club</a></i>, <i><a href="/wiki/Meeting_house" title="Meeting house">clubhouse</a></i>, <i><a href="/wiki/Golf_club" title="Golf club">golf club</a></i>, or any other sense that <i>club</i> might have it. The necessity to accommodate multiple meanings per word in different vectors (multi-sense embeddings) is the motivation for several contributions in NLP to split single-sense embeddings into multi-sense ones.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup>
+</p><p>Most approaches that produce multi-sense embeddings can be divided into two main categories for their word sense representation, i.e., unsupervised and knowledge-based.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup> Based on <a href="/wiki/Word2vec" title="Word2vec">word2vec</a> skip-gram, Multi-Sense Skip-Gram (MSSG)<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup> performs word-sense discrimination and embedding simultaneously, improving its training time, while assuming a specific number of senses for each word. In the Non-Parametric Multi-Sense Skip-Gram (NP-MSSG) this number can vary depending on each word. Combining the prior knowledge of lexical databases (e.g., <a href="/wiki/WordNet" title="WordNet">WordNet</a>, <a href="/wiki/Open_Mind_Common_Sense" title="Open Mind Common Sense">ConceptNet</a>, <a href="/wiki/BabelNet" title="BabelNet">BabelNet</a>), word embeddings and word sense disambiguation, Most Suitable Sense Annotation (MSSA)<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup> labels word-senses through an unsupervised and knowledge-based approach considering a word’s context in a pre-defined sliding window. Once the words are disambiguated, they can be used in a standard word embeddings technique, so multi-sense embeddings are produced. MSSA architecture allows the disambiguation and annotation process to be performed recurrently in a self-improving manner.
+</p><p>The use of multi-sense embeddings is known to improve performance in several NLP tasks, such as part-of-speech tagging, semantic relation identification, and semantic relatedness. However, tasks involving <a href="/wiki/Named_entity_recognition" class="mw-redirect" title="Named entity recognition">named entity recognition</a> and sentiment analysis seem not to benefit from a multiple vector representation.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="For_biological_sequences:_BioVectors">For biological sequences: BioVectors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Word_embedding&amp;action=edit&amp;section=3" title="Edit section: For biological sequences: BioVectors">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Word embeddings for <i>n-</i>grams in biological sequences (e.g. DNA, RNA, and Proteins) for <a href="/wiki/Bioinformatics" title="Bioinformatics">bioinformatics</a> applications have been proposed by Asgari and Mofrad.<sup id="cite_ref-:0_23-0" class="reference"><a href="#cite_note-:0-23">&#91;23&#93;</a></sup> Named bio-vectors (BioVec) to refer to biological sequences in general with protein-vectors (ProtVec) for proteins (amino-acid sequences) and gene-vectors (GeneVec) for gene sequences, this representation can be widely used in applications of deep learning in <a href="/wiki/Proteomics" title="Proteomics">proteomics</a> and <a href="/wiki/Genomics" title="Genomics">genomics</a>. The results presented by Asgari and Mofrad<sup id="cite_ref-:0_23-1" class="reference"><a href="#cite_note-:0-23">&#91;23&#93;</a></sup> suggest that BioVectors can characterize biological sequences in terms of biochemical and biophysical interpretations of the underlying patterns.
+</p>
+<h2><span class="mw-headline" id="Thought_vectors">Thought vectors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Word_embedding&amp;action=edit&amp;section=4" title="Edit section: Thought vectors">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b><a href="/wiki/Thought_vector" title="Thought vector">Thought vectors</a></b> are an extension of word embeddings to entire sentences or even documents. Some researchers hope that these can improve the quality of <a href="/wiki/Machine_translation" title="Machine translation">machine translation</a>.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Software">Software</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Word_embedding&amp;action=edit&amp;section=5" title="Edit section: Software">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Software for training and using word embeddings includes Tomas Mikolov's <a href="/wiki/Word2vec" title="Word2vec">Word2vec</a>, Stanford University's <a href="/wiki/GloVe_(machine_learning)" title="GloVe (machine learning)">GloVe</a>,<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;25&#93;</a></sup> AllenNLP's Elmo,<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">&#91;26&#93;</a></sup> <a href="/wiki/FastText" title="FastText">fastText</a>, <a href="/wiki/Gensim" title="Gensim">Gensim</a>,<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">&#91;27&#93;</a></sup> Indra<sup id="cite_ref-28" class="reference"><a href="#cite_note-28">&#91;28&#93;</a></sup> and <a href="/wiki/Deeplearning4j" title="Deeplearning4j">Deeplearning4j</a>. <a href="/wiki/Principal_Component_Analysis" class="mw-redirect" title="Principal Component Analysis">Principal Component Analysis</a> (PCA) and <a href="/wiki/T-Distributed_Stochastic_Neighbour_Embedding" class="mw-redirect" title="T-Distributed Stochastic Neighbour Embedding">T-Distributed Stochastic Neighbour Embedding</a> (t-SNE) are both  used to reduce the dimensionality of word vector spaces and visualize word embeddings and <a href="/wiki/Word-sense_induction" title="Word-sense induction">clusters</a>.<sup id="cite_ref-29" class="reference"><a href="#cite_note-29">&#91;29&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Examples_of_application">Examples of application</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Word_embedding&amp;action=edit&amp;section=6" title="Edit section: Examples of application">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For instance, the fastText is also used to calculate word embeddings for <a href="/wiki/Text_corpora" class="mw-redirect" title="Text corpora">text corpora</a> in <a href="/wiki/Sketch_Engine" title="Sketch Engine">Sketch Engine</a> that are available online.<sup id="cite_ref-30" class="reference"><a href="#cite_note-30">&#91;30&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Word_embedding&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Distributional_semantics" title="Distributional semantics">Distributional semantics</a></li>
+<li><a href="/wiki/Latent_semantic_analysis" title="Latent semantic analysis">Latent semantic analysis</a></li>
+<li><a href="/wiki/Brown_clustering" title="Brown clustering">Brown clustering</a></li>
+<li><a href="/wiki/GloVe_(machine_learning)" title="GloVe (machine learning)">GloVe</a></li>
+<li><a href="/wiki/Word2vec" title="Word2vec">word2vec</a></li>
+<li><a href="/wiki/FastText" title="FastText">fastText</a></li>
+<li><a href="/wiki/Gensim" title="Gensim">Gensim</a></li>
+<li><a href="/wiki/BERT_(language_model)" title="BERT (language model)">BERT (language model)</a></li>
+<li><a href="/w/index.php?title=ELMo&amp;action=edit&amp;redlink=1" class="new" title="ELMo (page does not exist)">ELMo</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Word_embedding&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFMikolovSutskeverChenCorrado2013" class="citation arxiv">Mikolov, Tomas; Sutskever, Ilya; Chen, Kai; Corrado, Greg; Dean, Jeffrey (2013). "Distributed Representations of Words and Phrases and their Compositionality". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1310.4546">1310.4546</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.CL">cs.CL</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=Distributed+Representations+of+Words+and+Phrases+and+their+Compositionality&amp;rft.date=2013&amp;rft_id=info%3Aarxiv%2F1310.4546&amp;rft.aulast=Mikolov&amp;rft.aufirst=Tomas&amp;rft.au=Sutskever%2C+Ilya&amp;rft.au=Chen%2C+Kai&amp;rft.au=Corrado%2C+Greg&amp;rft.au=Dean%2C+Jeffrey&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r951705291">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg");background-repeat:no-repeat;background-size:12px;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite id="CITEREFLebretCollobert2013" class="citation journal">Lebret, Rémi; Collobert, Ronan (2013). "Word Emdeddings through Hellinger PCA". <i>Conference of the European Chapter of the Association for Computational Linguistics (EACL)</i>. <b>2014</b>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1312.5542">1312.5542</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2013arXiv1312.5542L">2013arXiv1312.5542L</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Conference+of+the+European+Chapter+of+the+Association+for+Computational+Linguistics+%28EACL%29&amp;rft.atitle=Word+Emdeddings+through+Hellinger+PCA&amp;rft.volume=2014&amp;rft.date=2013&amp;rft_id=info%3Aarxiv%2F1312.5542&amp;rft_id=info%3Abibcode%2F2013arXiv1312.5542L&amp;rft.aulast=Lebret&amp;rft.aufirst=R%C3%A9mi&amp;rft.au=Collobert%2C+Ronan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite id="CITEREFLevyGoldberg2014" class="citation conference">Levy, Omer; Goldberg, Yoav (2014). <a rel="nofollow" class="external text" href="http://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf"><i>Neural Word Embedding as Implicit Matrix Factorization</i></a> <span class="cs1-format">(PDF)</span>. NIPS.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Neural+Word+Embedding+as+Implicit+Matrix+Factorization&amp;rft.date=2014&amp;rft.aulast=Levy&amp;rft.aufirst=Omer&amp;rft.au=Goldberg%2C+Yoav&amp;rft_id=http%3A%2F%2Fpapers.nips.cc%2Fpaper%2F5477-neural-word-embedding-as-implicit-matrix-factorization.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite id="CITEREFLiXu2015" class="citation conference">Li, Yitan; Xu, Linli (2015). <a rel="nofollow" class="external text" href="http://ijcai.org/papers15/Papers/IJCAI15-513.pdf"><i>Word Embedding Revisited: A New Representation Learning and Explicit Matrix Factorization Perspective</i></a> <span class="cs1-format">(PDF)</span>. Int'l J. Conf. on Artificial Intelligence (IJCAI).</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Word+Embedding+Revisited%3A+A+New+Representation+Learning+and+Explicit+Matrix+Factorization+Perspective&amp;rft.date=2015&amp;rft.aulast=Li&amp;rft.aufirst=Yitan&amp;rft.au=Xu%2C+Linli&amp;rft_id=http%3A%2F%2Fijcai.org%2Fpapers15%2FPapers%2FIJCAI15-513.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite id="CITEREFGloberson2007" class="citation journal">Globerson, Amir (2007). <a rel="nofollow" class="external text" href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34951.pdf">"Euclidean Embedding of Co-occurrence Data"</a> <span class="cs1-format">(PDF)</span>. <i>Journal of Machine Learning Research</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Machine+Learning+Research&amp;rft.atitle=Euclidean+Embedding+of+Co-occurrence+Data&amp;rft.date=2007&amp;rft.aulast=Globerson&amp;rft.aufirst=Amir&amp;rft_id=http%3A%2F%2Fstatic.googleusercontent.com%2Fmedia%2Fresearch.google.com%2Fen%2F%2Fpubs%2Farchive%2F34951.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite id="CITEREFQureshiGreene2018" class="citation journal">Qureshi, M. Atif; Greene, Derek (2018-06-04). "EVE: explainable vector based embedding technique using Wikipedia". <i>Journal of Intelligent Information Systems</i>. <b>53</b>: 137–165. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1702.06891">1702.06891</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2Fs10844-018-0511-x">10.1007/s10844-018-0511-x</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/0925-9902">0925-9902</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Intelligent+Information+Systems&amp;rft.atitle=EVE%3A+explainable+vector+based+embedding+technique+using+Wikipedia&amp;rft.volume=53&amp;rft.pages=137-165&amp;rft.date=2018-06-04&amp;rft_id=info%3Aarxiv%2F1702.06891&amp;rft.issn=0925-9902&amp;rft_id=info%3Adoi%2F10.1007%2Fs10844-018-0511-x&amp;rft.aulast=Qureshi&amp;rft.aufirst=M.+Atif&amp;rft.au=Greene%2C+Derek&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite id="CITEREFLevyGoldberg2014" class="citation conference">Levy, Omer; Goldberg, Yoav (2014). <a rel="nofollow" class="external text" href="https://levyomer.files.wordpress.com/2014/04/linguistic-regularities-in-sparse-and-explicit-word-representations-conll-2014.pdf"><i>Linguistic Regularities in Sparse and Explicit Word Representations</i></a> <span class="cs1-format">(PDF)</span>. CoNLL. pp.&#160;171–180.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Linguistic+Regularities+in+Sparse+and+Explicit+Word+Representations&amp;rft.pages=171-180&amp;rft.date=2014&amp;rft.aulast=Levy&amp;rft.aufirst=Omer&amp;rft.au=Goldberg%2C+Yoav&amp;rft_id=https%3A%2F%2Flevyomer.files.wordpress.com%2F2014%2F04%2Flinguistic-regularities-in-sparse-and-explicit-word-representations-conll-2014.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite id="CITEREFSocherBauerManningNg2013" class="citation conference">Socher, Richard; Bauer, John; Manning, Christopher; Ng, Andrew (2013). <a rel="nofollow" class="external text" href="http://www.socher.org/uploads/Main/SocherBauerManningNg_ACL2013.pdf"><i>Parsing with compositional vector grammars</i></a> <span class="cs1-format">(PDF)</span>. Proc. ACL Conf.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Parsing+with+compositional+vector+grammars&amp;rft.date=2013&amp;rft.aulast=Socher&amp;rft.aufirst=Richard&amp;rft.au=Bauer%2C+John&amp;rft.au=Manning%2C+Christopher&amp;rft.au=Ng%2C+Andrew&amp;rft_id=http%3A%2F%2Fwww.socher.org%2Fuploads%2FMain%2FSocherBauerManningNg_ACL2013.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite id="CITEREFSocherPerelyginWuChuang2013" class="citation conference">Socher, Richard; Perelygin, Alex; Wu, Jean; Chuang, Jason; Manning, Chris; Ng, Andrew; Potts, Chris (2013). <a rel="nofollow" class="external text" href="http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf"><i>Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank</i></a> <span class="cs1-format">(PDF)</span>. EMNLP.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Recursive+Deep+Models+for+Semantic+Compositionality+Over+a+Sentiment+Treebank&amp;rft.date=2013&amp;rft.aulast=Socher&amp;rft.aufirst=Richard&amp;rft.au=Perelygin%2C+Alex&amp;rft.au=Wu%2C+Jean&amp;rft.au=Chuang%2C+Jason&amp;rft.au=Manning%2C+Chris&amp;rft.au=Ng%2C+Andrew&amp;rft.au=Potts%2C+Chris&amp;rft_id=http%3A%2F%2Fnlp.stanford.edu%2F~socherr%2FEMNLP2013_RNTN.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite id="CITEREFFirth1957" class="citation journal">Firth, J.R. (1957). "A synopsis of linguistic theory 1930-1955". <i>Studies in Linguistic Analysis</i>: 1–32.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Studies+in+Linguistic+Analysis&amp;rft.atitle=A+synopsis+of+linguistic+theory+1930-1955&amp;rft.pages=1-32&amp;rft.date=1957&amp;rft.aulast=Firth&amp;rft.aufirst=J.R.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><span class="cs1-maint citation-comment">CS1 maint: ref=harv (<a href="/wiki/Category:CS1_maint:_ref%3Dharv" title="Category:CS1 maint: ref=harv">link</a>)</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/> Reprinted in <cite id="CITEREFF.R._Palmer1968" class="citation book">F.R. Palmer, ed. (1968). <i>Selected Papers of J.R. Firth 1952-1959</i>. London: Longman.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Selected+Papers+of+J.R.+Firth+1952-1959&amp;rft.pub=London%3A+Longman&amp;rft.date=1968&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite id="CITEREFSahlgren" class="citation web">Sahlgren, Magnus. <a rel="nofollow" class="external text" href="https://www.linkedin.com/pulse/brief-history-word-embeddings-some-clarifications-magnus-sahlgren/">"A brief history of word embeddings"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+brief+history+of+word+embeddings&amp;rft.aulast=Sahlgren&amp;rft.aufirst=Magnus&amp;rft_id=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fbrief-history-word-embeddings-some-clarifications-magnus-sahlgren%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite id="CITEREFBengioSchwenkSenécalMorin2006" class="citation book">Bengio, Yoshua; Schwenk, Holger; Senécal, Jean-Sébastien; Morin, Fréderic; Gauvain, Jean-Luc (2006). <i>A Neural Probabilistic Language Model</i>. <i>Studies in Fuzziness and Soft Computing</i>. <b>194</b>. pp.&#160;137–186. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F3-540-33486-6_6">10.1007/3-540-33486-6_6</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-30609-2" title="Special:BookSources/978-3-540-30609-2"><bdi>978-3-540-30609-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Neural+Probabilistic+Language+Model&amp;rft.pages=137-186&amp;rft.date=2006&amp;rft_id=info%3Adoi%2F10.1007%2F3-540-33486-6_6&amp;rft.isbn=978-3-540-30609-2&amp;rft.aulast=Bengio&amp;rft.aufirst=Yoshua&amp;rft.au=Schwenk%2C+Holger&amp;rft.au=Sen%C3%A9cal%2C+Jean-S%C3%A9bastien&amp;rft.au=Morin%2C+Fr%C3%A9deric&amp;rft.au=Gauvain%2C+Jean-Luc&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite id="CITEREFLavelliSebastianiZanoli2004" class="citation conference">Lavelli, Alberto; Sebastiani, Fabrizio; Zanoli, Roberto (2004). <i>Distributional term representations: an experimental comparison</i>. 13th ACM International Conference on Information and Knowledge Management. pp.&#160;615–624. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F1031171.1031284">10.1145/1031171.1031284</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Distributional+term+representations%3A+an+experimental+comparison&amp;rft.pages=615-624&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.1145%2F1031171.1031284&amp;rft.aulast=Lavelli&amp;rft.aufirst=Alberto&amp;rft.au=Sebastiani%2C+Fabrizio&amp;rft.au=Zanoli%2C+Roberto&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite id="CITEREFRoweisSaul2000" class="citation journal">Roweis, Sam T.; Saul, Lawrence K. (2000). "Nonlinear Dimensionality Reduction by Locally Linear Embedding". <i>Science</i>. <b>290</b> (5500): 2323–6. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2000Sci...290.2323R">2000Sci...290.2323R</a>. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.111.3313">10.1.1.111.3313</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1126%2Fscience.290.5500.2323">10.1126/science.290.5500.2323</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/11125150">11125150</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Science&amp;rft.atitle=Nonlinear+Dimensionality+Reduction+by+Locally+Linear+Embedding&amp;rft.volume=290&amp;rft.issue=5500&amp;rft.pages=2323-6&amp;rft.date=2000&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.111.3313&amp;rft_id=info%3Apmid%2F11125150&amp;rft_id=info%3Adoi%2F10.1126%2Fscience.290.5500.2323&amp;rft_id=info%3Abibcode%2F2000Sci...290.2323R&amp;rft.aulast=Roweis&amp;rft.aufirst=Sam+T.&amp;rft.au=Saul%2C+Lawrence+K.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://code.google.com/archive/p/word2vec/">word2vec</a></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite class="citation journal"><a rel="nofollow" class="external text" href="http://papers.nips.cc/paper/3583-a-scalable-hierarchical-distributed-language-model">"A Scalable Hierarchical Distributed Language Model"</a>. <i>Advances in Neural Information Processing Systems 21 (NIPS 2008)</i>. Curran Associates, Inc.: 1081–1088 2009.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Advances+in+Neural+Information+Processing+Systems+21+%28NIPS+2008%29&amp;rft.atitle=A+Scalable+Hierarchical+Distributed+Language+Model&amp;rft.pages=1081-1088&amp;rft.date=2009&amp;rft_id=http%3A%2F%2Fpapers.nips.cc%2Fpaper%2F3583-a-scalable-hierarchical-distributed-language-model&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite id="CITEREFReisingerMooney2010" class="citation book">Reisinger, Joseph; Mooney, Raymond J. (2010). <a rel="nofollow" class="external text" href="https://www.aclweb.org/anthology/N10-1013/"><i>Multi-Prototype Vector-Space Models of Word Meaning</i></a>. Human Language Technologies: The 2010 Annual Conference of the North American Chapter of the Association for Computational Linguistics. Los Angeles, California: Association for Computational Linguistics. pp.&#160;109–117. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-932432-65-7" title="Special:BookSources/978-1-932432-65-7"><bdi>978-1-932432-65-7</bdi></a><span class="reference-accessdate">. Retrieved <span class="nowrap">October 25,</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Multi-Prototype+Vector-Space+Models+of+Word+Meaning&amp;rft.place=Los+Angeles%2C+California&amp;rft.pages=109-117&amp;rft.pub=Association+for+Computational+Linguistics&amp;rft.date=2010&amp;rft.isbn=978-1-932432-65-7&amp;rft.aulast=Reisinger&amp;rft.aufirst=Joseph&amp;rft.au=Mooney%2C+Raymond+J.&amp;rft_id=https%3A%2F%2Fwww.aclweb.org%2Fanthology%2FN10-1013%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite id="CITEREFHuang,_Eric.2012" class="citation book">Huang, Eric. (2012). <i>Improving word representations via global context and multiple word prototypes</i>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/oclc/857900050">857900050</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Improving+word+representations+via+global+context+and+multiple+word+prototypes&amp;rft.date=2012&amp;rft_id=info%3Aoclcnum%2F857900050&amp;rft.au=Huang%2C+Eric.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><cite id="CITEREFCamacho-ColladosPilehvar2018" class="citation conference">Camacho-Collados, Jose; Pilehvar, Mohammad Taher (2018). <i>From Word to Sense Embeddings: A Survey on Vector Representations of Meaning</i>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1805.04032">1805.04032</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2018arXiv180504032C">2018arXiv180504032C</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=From+Word+to+Sense+Embeddings%3A+A+Survey+on+Vector+Representations+of+Meaning&amp;rft.date=2018&amp;rft_id=info%3Aarxiv%2F1805.04032&amp;rft_id=info%3Abibcode%2F2018arXiv180504032C&amp;rft.aulast=Camacho-Collados&amp;rft.aufirst=Jose&amp;rft.au=Pilehvar%2C+Mohammad+Taher&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><cite id="CITEREFNeelakantanShankarPassosMcCallum2014" class="citation journal">Neelakantan, Arvind; Shankar, Jeevan; Passos, Alexandre; McCallum, Andrew (2014). "Efficient Non-parametric Estimation of Multiple Embeddings per Word in Vector Space". <i>Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>. Stroudsburg, PA, USA: Association for Computational Linguistics: 1059–1069. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1504.06654">1504.06654</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.3115%2Fv1%2Fd14-1113">10.3115/v1/d14-1113</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+2014+Conference+on+Empirical+Methods+in+Natural+Language+Processing+%28EMNLP%29&amp;rft.atitle=Efficient+Non-parametric+Estimation+of+Multiple+Embeddings+per+Word+in+Vector+Space&amp;rft.pages=1059-1069&amp;rft.date=2014&amp;rft_id=info%3Aarxiv%2F1504.06654&amp;rft_id=info%3Adoi%2F10.3115%2Fv1%2Fd14-1113&amp;rft.aulast=Neelakantan&amp;rft.aufirst=Arvind&amp;rft.au=Shankar%2C+Jeevan&amp;rft.au=Passos%2C+Alexandre&amp;rft.au=McCallum%2C+Andrew&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite id="CITEREFRuasGroskyAizawa2019" class="citation journal">Ruas, Terry; Grosky, William; Aizawa, Akiko (2019-12-01). "Multi-sense embeddings through a word sense disambiguation process". <i>Expert Systems with Applications</i>. <b>136</b>: 288–303. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.eswa.2019.06.026">10.1016/j.eswa.2019.06.026</a>. <a href="/wiki/Hdl_(identifier)" class="mw-redirect" title="Hdl (identifier)">hdl</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//hdl.handle.net/2027.42%2F145475">2027.42/145475</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/0957-4174">0957-4174</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Expert+Systems+with+Applications&amp;rft.atitle=Multi-sense+embeddings+through+a+word+sense+disambiguation+process&amp;rft.volume=136&amp;rft.pages=288-303&amp;rft.date=2019-12-01&amp;rft_id=info%3Ahdl%2F2027.42%2F145475&amp;rft.issn=0957-4174&amp;rft_id=info%3Adoi%2F10.1016%2Fj.eswa.2019.06.026&amp;rft.aulast=Ruas&amp;rft.aufirst=Terry&amp;rft.au=Grosky%2C+William&amp;rft.au=Aizawa%2C+Akiko&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><cite id="CITEREFLiJurafsky2015" class="citation journal">Li, Jiwei; Jurafsky, Dan (2015). "Do Multi-Sense Embeddings Improve Natural Language Understanding?". <i>Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing</i>. Stroudsburg, PA, USA: Association for Computational Linguistics: 1722–1732. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1506.01070">1506.01070</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.18653%2Fv1%2Fd15-1200">10.18653/v1/d15-1200</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+2015+Conference+on+Empirical+Methods+in+Natural+Language+Processing&amp;rft.atitle=Do+Multi-Sense+Embeddings+Improve+Natural+Language+Understanding%3F&amp;rft.pages=1722-1732&amp;rft.date=2015&amp;rft_id=info%3Aarxiv%2F1506.01070&amp;rft_id=info%3Adoi%2F10.18653%2Fv1%2Fd15-1200&amp;rft.aulast=Li&amp;rft.aufirst=Jiwei&amp;rft.au=Jurafsky%2C+Dan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-:0-23"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_23-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_23-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFAsgariMofrad2015" class="citation journal">Asgari, Ehsaneddin; Mofrad, Mohammad R.K. (2015). <a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC4640716">"Continuous Distributed Representation of Biological Sequences for Deep Proteomics and Genomics"</a>. <i>PLOS One</i>. <b>10</b> (11): e0141287. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1503.05140">1503.05140</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2015PLoSO..1041287A">2015PLoSO..1041287A</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1371%2Fjournal.pone.0141287">10.1371/journal.pone.0141287</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC4640716">4640716</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/26555596">26555596</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=PLOS+One&amp;rft.atitle=Continuous+Distributed+Representation+of+Biological+Sequences+for+Deep+Proteomics+and+Genomics&amp;rft.volume=10&amp;rft.issue=11&amp;rft.pages=e0141287&amp;rft.date=2015&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC4640716&amp;rft_id=info%3Abibcode%2F2015PLoSO..1041287A&amp;rft_id=info%3Aarxiv%2F1503.05140&amp;rft_id=info%3Apmid%2F26555596&amp;rft_id=info%3Adoi%2F10.1371%2Fjournal.pone.0141287&amp;rft.aulast=Asgari&amp;rft.aufirst=Ehsaneddin&amp;rft.au=Mofrad%2C+Mohammad+R.K.&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC4640716&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><cite id="CITEREFKirosZhuSalakhutdinovZemel2015" class="citation arxiv">Kiros, Ryan; Zhu, Yukun; Salakhutdinov, Ruslan; Zemel, Richard S.; Torralba, Antonio; Urtasun, Raquel; Fidler, Sanja (2015). "skip-thought vectors". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1506.06726">1506.06726</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.CL">cs.CL</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=skip-thought+vectors&amp;rft.date=2015&amp;rft_id=info%3Aarxiv%2F1506.06726&amp;rft.aulast=Kiros&amp;rft.aufirst=Ryan&amp;rft.au=Zhu%2C+Yukun&amp;rft.au=Salakhutdinov%2C+Ruslan&amp;rft.au=Zemel%2C+Richard+S.&amp;rft.au=Torralba%2C+Antonio&amp;rft.au=Urtasun%2C+Raquel&amp;rft.au=Fidler%2C+Sanja&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://nlp.stanford.edu/projects/glove/">"GloVe"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=GloVe&amp;rft_id=http%3A%2F%2Fnlp.stanford.edu%2Fprojects%2Fglove%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://allennlp.org/elmo">"Elmo"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Elmo&amp;rft_id=https%3A%2F%2Fallennlp.org%2Felmo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://radimrehurek.com/gensim/">"Gensim"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Gensim&amp;rft_id=http%3A%2F%2Fradimrehurek.com%2Fgensim%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://github.com/Lambda-3/Indra">"Indra"</a>. 2018-10-25.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Indra&amp;rft.date=2018-10-25&amp;rft_id=https%3A%2F%2Fgithub.com%2FLambda-3%2FIndra&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><cite id="CITEREFGhassemiMarkNemati2015" class="citation journal">Ghassemi, Mohammad; Mark, Roger; Nemati, Shamim (2015). <a rel="nofollow" class="external text" href="http://www.cinc.org/archives/2015/pdf/0629.pdf">"A Visualization of Evolving Clinical Sentiment Using Vector Representations of Clinical Notes"</a> <span class="cs1-format">(PDF)</span>. <i>Computing in Cardiology</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computing+in+Cardiology&amp;rft.atitle=A+Visualization+of+Evolving+Clinical+Sentiment+Using+Vector+Representations+of+Clinical+Notes&amp;rft.date=2015&amp;rft.aulast=Ghassemi&amp;rft.aufirst=Mohammad&amp;rft.au=Mark%2C+Roger&amp;rft.au=Nemati%2C+Shamim&amp;rft_id=http%3A%2F%2Fwww.cinc.org%2Farchives%2F2015%2Fpdf%2F0629.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://embeddings.sketchengine.co.uk/">"Embedding Viewer"</a>. <i>Embedding Viewer</i>. Lexical Computing<span class="reference-accessdate">. Retrieved <span class="nowrap">7 Feb</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Embedding+Viewer&amp;rft.atitle=Embedding+Viewer&amp;rft_id=https%3A%2F%2Fembeddings.sketchengine.co.uk%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWord+embedding" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+</ol></div></div>
+<div role="navigation" class="navbox" aria-labelledby="Natural_language_processing" style="padding:3px"><table class="nowraplinks hlist mw-collapsible mw-collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Natural_language_processing" title="Template:Natural language processing"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Natural_language_processing" title="Template talk:Natural language processing"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Natural_language_processing&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Natural_language_processing" style="font-size:114%;margin:0 4em"><a href="/wiki/Natural_language_processing" title="Natural language processing">Natural language processing</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">General terms</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Natural_language_understanding" class="mw-redirect" title="Natural language understanding">Natural language understanding</a></li>
+<li><a href="/wiki/Text_corpus" title="Text corpus">Text corpus</a></li>
+<li><a href="/wiki/Speech_corpus" title="Speech corpus">Speech corpus</a></li>
+<li><a href="/wiki/Stop_words" title="Stop words">Stopwords</a></li>
+<li><a href="/wiki/Bag-of-words_model" title="Bag-of-words model">Bag-of-words</a></li>
+<li><a href="/wiki/AI-complete" title="AI-complete">AI-complete</a></li>
+<li><a href="/wiki/N-gram" title="N-gram">n-gram</a> (<a href="/wiki/Bigram" title="Bigram">Bigram</a>, <a href="/wiki/Trigram" title="Trigram">Trigram</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Text_mining" title="Text mining">Text analysis</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Text_segmentation" title="Text segmentation">Text segmentation</a></li>
+<li><a href="/wiki/Part-of-speech_tagging" title="Part-of-speech tagging">Part-of-speech tagging</a></li>
+<li><a href="/wiki/Shallow_parsing" title="Shallow parsing">Text chunking</a></li>
+<li><a href="/wiki/Compound_term_processing" class="mw-redirect" title="Compound term processing">Compound term processing</a></li>
+<li><a href="/wiki/Collocation_extraction" title="Collocation extraction">Collocation extraction</a></li>
+<li><a href="/wiki/Stemming" title="Stemming">Stemming</a></li>
+<li><a href="/wiki/Lemmatisation" title="Lemmatisation">Lemmatisation</a></li>
+<li><a href="/wiki/Named-entity_recognition" title="Named-entity recognition">Named-entity recognition</a></li>
+<li><a href="/wiki/Coreference#Coreference_resolution" title="Coreference">Coreference resolution</a></li>
+<li><a href="/wiki/Sentiment_analysis" title="Sentiment analysis">Sentiment analysis</a></li>
+<li><a href="/wiki/Concept_mining" title="Concept mining">Concept mining</a></li>
+<li><a href="/wiki/Parsing" title="Parsing">Parsing</a></li>
+<li><a href="/wiki/Word-sense_disambiguation" title="Word-sense disambiguation">Word-sense disambiguation</a></li>
+<li><a href="/wiki/Ontology_learning" title="Ontology learning">Ontology learning</a></li>
+<li><a href="/wiki/Terminology_extraction" title="Terminology extraction">Terminology extraction</a></li>
+<li><a href="/wiki/Textual_entailment" title="Textual entailment">Textual entailment</a></li>
+<li><a href="/wiki/Truecasing" title="Truecasing">Truecasing</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Automatic_summarization" title="Automatic summarization">Automatic summarization</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Multi-document_summarization" title="Multi-document summarization">Multi-document summarization</a></li>
+<li><a href="/wiki/Sentence_extraction" title="Sentence extraction">Sentence extraction</a></li>
+<li><a href="/wiki/Text_simplification" title="Text simplification">Text simplification</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Machine_translation" title="Machine translation">Machine translation</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Computer-assisted_translation" title="Computer-assisted translation">Computer-assisted</a></li>
+<li><a href="/wiki/Example-based_machine_translation" title="Example-based machine translation">Example-based</a></li>
+<li><a href="/wiki/Rule-based_machine_translation" title="Rule-based machine translation">Rule-based</a></li>
+<li><a href="/wiki/Neural_machine_translation" title="Neural machine translation">Neural</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Automatic_identification_and_data_capture" title="Automatic identification and data capture">Automatic identification<br />and data capture</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Speech_recognition" title="Speech recognition">Speech recognition</a></li>
+<li><a href="/wiki/Speech_synthesis" title="Speech synthesis">Speech synthesis</a></li>
+<li><a href="/wiki/Optical_character_recognition" title="Optical character recognition">Optical character recognition</a></li>
+<li><a href="/wiki/Natural_language_generation" class="mw-redirect" title="Natural language generation">Natural language generation</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Topic_model" title="Topic model">Topic model</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Pachinko_allocation" title="Pachinko allocation">Pachinko allocation</a></li>
+<li><a href="/wiki/Latent_Dirichlet_allocation" title="Latent Dirichlet allocation">Latent Dirichlet allocation</a></li>
+<li><a href="/wiki/Latent_semantic_analysis" title="Latent semantic analysis">Latent semantic analysis</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Computer-assisted_reviewing" title="Computer-assisted reviewing">Computer-assisted<br />reviewing</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Automated_essay_scoring" title="Automated essay scoring">Automated essay scoring</a></li>
+<li><a href="/wiki/Concordancer" title="Concordancer">Concordancer</a></li>
+<li><a href="/wiki/Grammar_checker" title="Grammar checker">Grammar checker</a></li>
+<li><a href="/wiki/Predictive_text" title="Predictive text">Predictive text</a></li>
+<li><a href="/wiki/Spell_checker" title="Spell checker">Spell checker</a></li>
+<li><a href="/wiki/Syntax_guessing" title="Syntax guessing">Syntax guessing</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Natural_language_user_interface" class="mw-redirect" title="Natural language user interface">Natural language<br />user interface</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Automated_online_assistant" class="mw-redirect" title="Automated online assistant">Automated online assistant</a></li>
+<li><a href="/wiki/Chatbot" title="Chatbot">Chatbot</a></li>
+<li><a href="/wiki/Interactive_fiction" title="Interactive fiction">Interactive fiction</a></li>
+<li><a href="/wiki/Question_answering" title="Question answering">Question answering</a></li>
+<li><a href="/wiki/Voice_user_interface" title="Voice user interface">Voice user interface</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1411
+Cached time: 20200426175712
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.352 seconds
+Real time usage: 0.431 seconds
+Preprocessor visited node count: 1669/1000000
+Post‐expand include size: 93703/2097152 bytes
+Template argument size: 796/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 119888/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.192/10.000 seconds
+Lua memory usage: 3.51 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  345.080      1 -total
+ 75.65%  261.038      1 Template:Reflist
+ 23.81%   82.160      2 Template:Cite_arXiv
+ 18.47%   63.732     11 Template:Cite_journal
+ 16.01%   55.259      1 Template:Machine_learning_bar
+ 14.92%   51.482      1 Template:Sidebar_with_collapsible_lists
+ 11.16%   38.526      7 Template:Cite_conference
+  6.69%   23.096      6 Template:Cite_web
+  6.65%   22.932      1 Template:Longitem
+  5.97%   20.590      4 Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:43561218-0!canonical and timestamp 20200426175711 and revision id 951683288
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Word_embedding&amp;oldid=951683288">https://en.wikipedia.org/w/index.php?title=Word_embedding&amp;oldid=951683288</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Language_modeling" title="Category:Language modeling">Language modeling</a></li><li><a href="/wiki/Category:Artificial_neural_networks" title="Category:Artificial neural networks">Artificial neural networks</a></li><li><a href="/wiki/Category:Natural_language_processing" title="Category:Natural language processing">Natural language processing</a></li><li><a href="/wiki/Category:Computational_linguistics" title="Category:Computational linguistics">Computational linguistics</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_ref%3Dharv" title="Category:CS1 maint: ref=harv">CS1 maint: ref=harv</a></li><li><a href="/wiki/Category:CS1:_long_volume_value" title="Category:CS1: long volume value">CS1: long volume value</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul >
+		<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Word+embedding" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Word+embedding" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+		<div id="left-navigation">
+			<div id="p-namespaces" role="navigation" class="vectorTabs " aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="/wiki/Word_embedding" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="/wiki/Talk:Word_embedding" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li>
+	</ul>
+</div>
+
+			<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+		</div>
+		<div id="right-navigation">
+			<div id="p-views" role="navigation" class="vectorTabs " aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="/wiki/Word_embedding">Read</a></li><li id="ca-edit" class="collapsible"><a href="/w/index.php?title=Word_embedding&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="collapsible"><a href="/w/index.php?title=Word_embedding&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+	</ul>
+</div>
+
+			<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Search" name="title"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="/wiki/Main_Page"></a>
+	</div>
+	<div class="portal" role="navigation" id="p-navigation"  aria-labelledby="p-navigation-label">
+	<h3  id="p-navigation-label">
+		Navigation
+	</h3>
+	<div class="body">
+		<ul><li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Wikipedia:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li></ul>
+		
+	</div>
+</div>
+
+
+	<div class="portal" role="navigation" id="p-interaction"  aria-labelledby="p-interaction-label">
+	<h3  id="p-interaction-label">
+		Interaction
+	</h3>
+	<div class="body">
+		<ul><li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-tb"  aria-labelledby="p-tb-label">
+	<h3  id="p-tb-label">
+		Tools
+	</h3>
+	<div class="body">
+		<ul><li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Word_embedding" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Word_embedding" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Word_embedding&amp;oldid=951683288" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Word_embedding&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q18395344" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Word_embedding&amp;id=951683288&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-coll-print_export"  aria-labelledby="p-coll-print_export-label">
+	<h3  id="p-coll-print_export-label">
+		Print/export
+	</h3>
+	<div class="body">
+		<ul><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Word+embedding">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Word+embedding&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Word_embedding&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-lang"  aria-labelledby="p-lang-label">
+	<h3  id="p-lang-label">
+		Languages
+	</h3>
+	<div class="body">
+		<ul><li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%AA%D8%B6%D9%85%D9%8A%D9%86_%D8%A7%D9%84%D9%83%D9%84%D9%85%D8%A7%D8%AA" title="تضمين الكلمات – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Vno%C5%99en%C3%AD_slov" title="Vnoření slov – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Word_embedding" title="Word embedding – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Word_embedding" title="Word embedding – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Word_embedding" title="Word embedding – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Word_embedding" title="Word embedding – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D1%81%D0%BB%D0%BE%D0%B2" title="Векторное представление слов – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E8%AF%8D%E5%B5%8C%E5%85%A5" title="词嵌入 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q18395344#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div id="footer" role="contentinfo" >
+	<ul id="footer-info" class="">
+		<li id="footer-info-lastmod"> This page was last edited on 18 April 2020, at 10:16<span class="anonymous-show">&#160;(UTC)</span>.</li>
+		<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+	</ul>
+	<ul id="footer-places" class="">
+		<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+		<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+		<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+		<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+		<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+		<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Word_embedding&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</div>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.352","walltime":"0.431","ppvisitednodes":{"value":1669,"limit":1000000},"postexpandincludesize":{"value":93703,"limit":2097152},"templateargumentsize":{"value":796,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":119888,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  345.080      1 -total"," 75.65%  261.038      1 Template:Reflist"," 23.81%   82.160      2 Template:Cite_arXiv"," 18.47%   63.732     11 Template:Cite_journal"," 16.01%   55.259      1 Template:Machine_learning_bar"," 14.92%   51.482      1 Template:Sidebar_with_collapsible_lists"," 11.16%   38.526      7 Template:Cite_conference","  6.69%   23.096      6 Template:Cite_web","  6.65%   22.932      1 Template:Longitem","  5.97%   20.590      4 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.192","limit":"10.000"},"limitreport-memusage":{"value":3677027,"limit":52428800}},"cachereport":{"origin":"mw1411","timestamp":"20200426175712","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Word embedding","url":"https:\/\/en.wikipedia.org\/wiki\/Word_embedding","sameAs":"http:\/\/www.wikidata.org\/entity\/Q18395344","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q18395344","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2014-08-14T10:44:37Z","dateModified":"2020-04-18T10:16:02Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/fe\/Kernel_Machine.svg","headline":"method in natural language processing"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":120,"wgHostname":"mw1320"});});</script></body></html>

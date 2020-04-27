@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Parallel tempering - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"XqaiXwpAEKAAAbUjPRkAAADP","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Parallel_tempering","wgTitle":"Parallel tempering","wgCurRevisionId":926897488,"wgRevisionId":926897488,"wgArticleId":1459075,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles needing context from December 2010","All Wikipedia articles needing context","Wikipedia introduction cleanup from December 2010","All pages needing cleanup","Markov chain Monte Carlo","Molecular dynamics","Heuristics","Stochastic optimization"],"wgPageContentLanguage":"en",
+"wgPageContentModel":"wikitext","wgRelevantPageName":"Parallel_tempering","wgRelevantArticleId":1459075,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Replica_exchange","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Parallel_tempering","wgWikibaseItemId":"Q7135015","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready",
+"user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.styles.legacy":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","skins.vector.js","mediawiki.page.ready","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.28"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Parallel_tempering&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Parallel_tempering&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Parallel_tempering"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Parallel_tempering rootpage-Parallel_tempering skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Parallel tempering</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">&#160;&#160;(Redirected from <a href="/w/index.php?title=Replica_exchange&amp;redirect=no" class="mw-redirect" title="Replica exchange">Replica exchange</a>)</span></div>
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="box-Context plainlinks metadata ambox ambox-style ambox-Context" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" decoding="async" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>provides insufficient context for those unfamiliar with the subject</b>.<span class="hide-when-compact"> Please help <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Parallel_tempering&amp;action=edit">improve the article</a> by <a href="/wiki/Wikipedia:Writing_better_articles#Provide_context_for_the_reader" title="Wikipedia:Writing better articles">providing more context for the reader</a>.</span>  <small class="date-container"><i>(<span class="date">December 2010</span>)</i></small><small class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></div></td></tr></tbody></table>
+<p><b>Parallel tempering</b>, also known as <b>replica exchange MCMC sampling</b>, is a <a href="/wiki/Simulation" title="Simulation">simulation</a> method aimed at improving the dynamic properties of  <a href="/wiki/Monte_Carlo_method" title="Monte Carlo method">Monte Carlo method</a> simulations of physical systems, and of <a href="/wiki/Markov_chain_Monte_Carlo" title="Markov chain Monte Carlo">Markov chain Monte Carlo</a> (MCMC) sampling methods more generally.  The replica exchange method was originally devised by Swendsen and Wang <sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> then extended by Geyer<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> and later developed, among others, by <a href="/w/index.php?title=Koji_Hukushima&amp;action=edit&amp;redlink=1" class="new" title="Koji Hukushima (page does not exist)">Hukushima</a> and <a href="/w/index.php?title=Koji_Nemoto&amp;action=edit&amp;redlink=1" class="new" title="Koji Nemoto (page does not exist)">Nemoto</a>,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> <a href="/wiki/Giorgio_Parisi" title="Giorgio Parisi">Giorgio Parisi</a>,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+Sugita and Okamoto formulated a <a href="/wiki/Molecular_dynamics" title="Molecular dynamics">molecular dynamics</a> version of parallel tempering:<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> this is usually known as replica-exchange molecular dynamics or REMD.
+</p><p>Essentially, one runs <i>N</i> copies of the system, randomly initialized, at different temperatures. Then, based on the Metropolis criterion  one exchanges configurations at different temperatures. The idea of this method
+is to make configurations at high temperatures available to the simulations at low temperatures and vice versa.
+This results in a very robust ensemble which is able to sample both low and high energy configurations.
+In this way, thermodynamical properties such as the specific heat, which is in general not well computed in the canonical ensemble, can be computed with great precision.
+</p>
+<h2><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Parallel_tempering&amp;action=edit&amp;section=1" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Typically a <a href="/wiki/Monte_Carlo_simulation" class="mw-redirect" title="Monte Carlo simulation">Monte Carlo simulation</a> using a <a href="/wiki/Metropolis%E2%80%93Hastings" class="mw-redirect" title="Metropolis–Hastings">Metropolis–Hastings</a> update consists of a single <a href="/wiki/Stochastic_process" title="Stochastic process">stochastic process</a> that evaluates the <a href="/wiki/Energy" title="Energy">energy</a> of the system and accepts/rejects updates based on the <a href="/wiki/Temperature" title="Temperature">temperature</a> <i>T</i>.  At high temperatures updates that change the energy of the system are comparatively more probable.  When the system is highly correlated, updates are rejected and the simulation is said to suffer from critical slowing down.
+</p><p>If we were to run two simulations at temperatures separated by a Δ<i>T</i>, we would find that if Δ<i>T</i> is small enough, then the energy <a href="/wiki/Histogram" title="Histogram">histograms</a> obtained by collecting the values of the energies over a set of Monte Carlo steps N will create two distributions that will somewhat overlap. The overlap can be defined by the area of the histograms that falls over the same interval of energy values, normalized by the total number of samples. For Δ<i>T</i> = 0 the overlap should approach 1.
+</p><p>Another way to interpret this overlap is to say that system configurations sampled at temperature <i>T</i><sub>1</sub> are likely to appear during a simulation at <i>T</i><sub>2</sub>. Because the <a href="/wiki/Markov_chain" title="Markov chain">Markov chain</a> should have no memory of its past, we can create a new update for the system composed of the two systems at <i>T</i><sub>1</sub> and <i>T</i><sub>2</sub>.  At a given Monte Carlo step we can update the global system by swapping the configuration of the two systems, or alternatively trading the two temperatures. The update is accepted according to the Metropolis–Hastings criterion with probability
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p=\min \left(1,{\frac {\exp \left(-{\frac {E_{j}}{kT_{i}}}-{\frac {E_{i}}{kT_{j}}}\right)}{\exp \left(-{\frac {E_{i}}{kT_{i}}}-{\frac {E_{j}}{kT_{j}}}\right)}}\right)=\min \left(1,e^{(E_{i}-E_{j})\left({\frac {1}{kT_{i}}}-{\frac {1}{kT_{j}}}\right)}\right),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>,</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>exp</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <msub>
+                            <mi>E</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                          </msub>
+                          <mrow>
+                            <mi>k</mi>
+                            <msub>
+                              <mi>T</mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>i</mi>
+                              </mrow>
+                            </msub>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <msub>
+                            <mi>E</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                          <mrow>
+                            <mi>k</mi>
+                            <msub>
+                              <mi>T</mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>j</mi>
+                              </mrow>
+                            </msub>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mrow>
+                  <mi>exp</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <msub>
+                            <mi>E</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                          <mrow>
+                            <mi>k</mi>
+                            <msub>
+                              <mi>T</mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>i</mi>
+                              </mrow>
+                            </msub>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <msub>
+                            <mi>E</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                          </msub>
+                          <mrow>
+                            <mi>k</mi>
+                            <msub>
+                              <mi>T</mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>j</mi>
+                              </mrow>
+                            </msub>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>,</mo>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>E</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>E</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>j</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mi>k</mi>
+                          <msub>
+                            <mi>T</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                          <mi>k</mi>
+                          <msub>
+                            <mi>T</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>j</mi>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p=\min \left(1,{\frac {\exp \left(-{\frac {E_{j}}{kT_{i}}}-{\frac {E_{i}}{kT_{j}}}\right)}{\exp \left(-{\frac {E_{i}}{kT_{i}}}-{\frac {E_{j}}{kT_{j}}}\right)}}\right)=\min \left(1,e^{(E_{i}-E_{j})\left({\frac {1}{kT_{i}}}-{\frac {1}{kT_{j}}}\right)}\right),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/70ab162a039e036dc0049805f921f59304feef52" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.671ex; margin-left: -0.089ex; width:64.847ex; height:10.509ex;" alt=" p = \min \left( 1, \frac{ \exp \left( -\frac{E_j}{kT_i} - \frac{E_i}{kT_j} \right) }{ \exp \left( -\frac{E_i}{kT_i} - \frac{E_j}{kT_j} \right) } \right) = \min \left( 1, e^{(E_i - E_j) \left( \frac{1}{kT_i} - \frac{1}{kT_j} \right)} \right) ,"/></span></dd></dl>
+<p>and otherwise the update is rejected. The <a href="/wiki/Detailed_balance" title="Detailed balance">detailed balance</a> condition has to be satisfied by ensuring that the reverse update has to be equally likely, all else being equal. This can be ensured by appropriately choosing regular Monte Carlo updates or parallel tempering updates with probabilities that are independent of the configurations of the two systems or of the Monte Carlo step.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p><p>This update can be generalized to more than two systems.
+</p><p>By a careful choice of temperatures and number of systems one can achieve an improvement in the mixing properties of a set of Monte Carlo simulations that exceeds the extra computational cost of running parallel simulations.
+</p><p>Other considerations to be made: increasing the number of different temperatures can have a detrimental effect, as one can think of the 'lateral' movement of a given system across temperatures as a diffusion process.
+Set up is important as there must be a practical histogram overlap to achieve a reasonable probability of lateral moves.
+</p><p>The parallel tempering method can be used as a super <a href="/wiki/Simulated_annealing" title="Simulated annealing">simulated annealing</a> that does not need restart, since a system at high temperature can feed new local optimizers to a system at low temperature, allowing tunneling between metastable states and improving convergence to a global optimum.
+</p>
+<h2><span class="mw-headline" id="Implementations">Implementations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Parallel_tempering&amp;action=edit&amp;section=2" title="Edit section: Implementations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Abalone_(molecular_mechanics)" title="Abalone (molecular mechanics)">Abalone</a></li>
+<li>ACEMD</li>
+<li><a href="/wiki/AMBER" title="AMBER">AMBER</a></li>
+<li><a href="/wiki/CHARMM" title="CHARMM">CHARMM</a></li>
+<li><a href="/wiki/Desmond_(software)" title="Desmond (software)">Desmond</a></li>
+<li><a href="/wiki/GROMACS" title="GROMACS">GROMACS</a></li>
+<li><a href="/wiki/LAMMPS" title="LAMMPS">LAMMPS</a></li>
+<li><a href="/wiki/Orac_(MD_program)" title="Orac (MD program)">Orac</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Parallel_tempering&amp;action=edit&amp;section=3" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Swendsen RH and Wang JS (1986) <a rel="nofollow" class="external text" href="https://www.researchgate.net/profile/Robert_Swendsen/publication/13255490_Replica_Monte_Carlo_Simulation_of_Spin-Glasses/links/0046352309b5f54715000000.pdf">Replica Monte Carlo simulation of spin glasses</a> Physical Review Letters 57&#160;: 2607–2609</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">C. J. Geyer, (1991) in <i>Computing Science and Statistics</i>, Proceedings of the 23rd Symposium on the Interface, American Statistical Association, New York, p. 156.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite id="CITEREFHukushima,_KojiNemoto,_Koji1996" class="citation journal">Hukushima, Koji &amp; Nemoto, Koji (1996). "Exchange Monte Carlo method and application to spin glass simulations". <i>J. Phys. Soc. Jpn</i>. <b>65</b> (6): 1604–1608. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/cond-mat/9512035">cond-mat/9512035</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1143%2FJPSJ.65.1604">10.1143/JPSJ.65.1604</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=J.+Phys.+Soc.+Jpn.&amp;rft.atitle=Exchange+Monte+Carlo+method+and+application+to+spin+glass+simulations&amp;rft.volume=65&amp;rft.issue=6&amp;rft.pages=1604-1608&amp;rft.date=1996&amp;rft_id=info%3Aarxiv%2Fcond-mat%2F9512035&amp;rft_id=info%3Adoi%2F10.1143%2FJPSJ.65.1604&amp;rft.au=Hukushima%2C+Koji&amp;rft.au=Nemoto%2C+Koji&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AParallel+tempering" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r951705291">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg");background-repeat:no-repeat;background-size:12px;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite id="CITEREFMarco_FalcioniMichael_W._Deem1999" class="citation journal">Marco Falcioni &amp; Michael W. Deem (1999). "A Biased Monte Carlo Scheme for Zeolite Structure Solution". <i>J. Chem. Phys</i>. <b>110</b> (3): 1754. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/cond-mat/9809085">cond-mat/9809085</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1999JChPh.110.1754F">1999JChPh.110.1754F</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1063%2F1.477812">10.1063/1.477812</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=J.+Chem.+Phys.&amp;rft.atitle=A+Biased+Monte+Carlo+Scheme+for+Zeolite+Structure+Solution&amp;rft.volume=110&amp;rft.issue=3&amp;rft.pages=1754&amp;rft.date=1999&amp;rft_id=info%3Aarxiv%2Fcond-mat%2F9809085&amp;rft_id=info%3Adoi%2F10.1063%2F1.477812&amp;rft_id=info%3Abibcode%2F1999JChPh.110.1754F&amp;rft.au=Marco+Falcioni&amp;rft.au=Michael+W.+Deem&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AParallel+tempering" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">David J. Earl and Michael W. Deem (2005) <a rel="nofollow" class="external text" href="http://www.rsc.org/Publishing/Journals/CP/article.asp?doi=b509983h">"Parallel tempering: Theory, applications, and new perspectives"</a>,  <i>Phys. Chem. Chem. Phys.</i>,  7, 3910</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite id="CITEREFY._SugitaY._Okamoto1999" class="citation journal">Y. Sugita &amp; Y. Okamoto (1999). "Replica-exchange molecular dynamics method for protein folding". <i>Chemical Physics Letters</i>. <b>314</b> (1–2): 141–151. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1999CPL...314..141S">1999CPL...314..141S</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2FS0009-2614%2899%2901123-9">10.1016/S0009-2614(99)01123-9</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Chemical+Physics+Letters&amp;rft.atitle=Replica-exchange+molecular+dynamics+method+for+protein+folding&amp;rft.volume=314&amp;rft.issue=1%E2%80%932&amp;rft.pages=141-151&amp;rft.date=1999&amp;rft_id=info%3Adoi%2F10.1016%2FS0009-2614%2899%2901123-9&amp;rft_id=info%3Abibcode%2F1999CPL...314..141S&amp;rft.au=Y.+Sugita&amp;rft.au=Y.+Okamoto&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AParallel+tempering" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite id="CITEREFRadford_M._Neal1996" class="citation journal">Radford M. Neal (1996). "Sampling from multimodal distributions using tempered transitions". <i>Statistics and Computing</i>. <b>6</b> (4): 353–366. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF00143556">10.1007/BF00143556</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Statistics+and+Computing&amp;rft.atitle=Sampling+from+multimodal+distributions+using+tempered+transitions&amp;rft.volume=6&amp;rft.issue=4&amp;rft.pages=353-366&amp;rft.date=1996&amp;rft_id=info%3Adoi%2F10.1007%2FBF00143556&amp;rft.au=Radford+M.+Neal&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AParallel+tempering" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+</ol></div>
+<!-- 
+NewPP limit report
+Parsed by mw1272
+Cached time: 20200418200307
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.132 seconds
+Real time usage: 0.204 seconds
+Preprocessor visited node count: 301/1000000
+Post‐expand include size: 11973/2097152 bytes
+Template argument size: 13/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 17931/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.084/10.000 seconds
+Lua memory usage: 2.7 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  161.317      1 -total
+ 57.71%   93.097      4 Template:Cite_journal
+ 37.82%   61.016      1 Template:Context
+ 27.18%   43.840      1 Template:Ambox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1459075-0!canonical!math=5 and timestamp 20200418200307 and revision id 926897488
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Parallel_tempering&amp;oldid=926897488">https://en.wikipedia.org/w/index.php?title=Parallel_tempering&amp;oldid=926897488</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Markov_chain_Monte_Carlo" title="Category:Markov chain Monte Carlo">Markov chain Monte Carlo</a></li><li><a href="/wiki/Category:Molecular_dynamics" title="Category:Molecular dynamics">Molecular dynamics</a></li><li><a href="/wiki/Category:Heuristics" title="Category:Heuristics">Heuristics</a></li><li><a href="/wiki/Category:Stochastic_optimization" title="Category:Stochastic optimization">Stochastic optimization</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_needing_context_from_December_2010" title="Category:Wikipedia articles needing context from December 2010">Wikipedia articles needing context from December 2010</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_needing_context" title="Category:All Wikipedia articles needing context">All Wikipedia articles needing context</a></li><li><a href="/wiki/Category:Wikipedia_introduction_cleanup_from_December_2010" title="Category:Wikipedia introduction cleanup from December 2010">Wikipedia introduction cleanup from December 2010</a></li><li><a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">All pages needing cleanup</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul >
+		<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Parallel+tempering" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Parallel+tempering" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+		<div id="left-navigation">
+			<div id="p-namespaces" role="navigation" class="vectorTabs " aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="/wiki/Parallel_tempering" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="/wiki/Talk:Parallel_tempering" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li>
+	</ul>
+</div>
+
+			<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+		</div>
+		<div id="right-navigation">
+			<div id="p-views" role="navigation" class="vectorTabs " aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="/wiki/Parallel_tempering">Read</a></li><li id="ca-edit" class="collapsible"><a href="/w/index.php?title=Parallel_tempering&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="collapsible"><a href="/w/index.php?title=Parallel_tempering&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+	</ul>
+</div>
+
+			<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Search" name="title"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="/wiki/Main_Page"></a>
+	</div>
+	<div class="portal" role="navigation" id="p-navigation"  aria-labelledby="p-navigation-label">
+	<h3  id="p-navigation-label">
+		Navigation
+	</h3>
+	<div class="body">
+		<ul><li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Wikipedia:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li></ul>
+		
+	</div>
+</div>
+
+
+	<div class="portal" role="navigation" id="p-interaction"  aria-labelledby="p-interaction-label">
+	<h3  id="p-interaction-label">
+		Interaction
+	</h3>
+	<div class="body">
+		<ul><li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-tb"  aria-labelledby="p-tb-label">
+	<h3  id="p-tb-label">
+		Tools
+	</h3>
+	<div class="body">
+		<ul><li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Parallel_tempering" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Parallel_tempering" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Parallel_tempering&amp;oldid=926897488" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Parallel_tempering&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q7135015" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Parallel_tempering&amp;id=926897488&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-coll-print_export"  aria-labelledby="p-coll-print_export-label">
+	<h3  id="p-coll-print_export-label">
+		Print/export
+	</h3>
+	<div class="body">
+		<ul><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Parallel+tempering">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Parallel+tempering&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Parallel_tempering&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-lang"  aria-labelledby="p-lang-label">
+	<h3  id="p-lang-label">
+		Languages
+	</h3>
+	<div class="body">
+		<ul><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E4%BA%A4%E6%8F%9B%E6%B3%95" title="レプリカ交換法 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%B9%B6%E8%A1%8C%E9%80%80%E7%81%AB" title="并行退火 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q7135015#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div id="footer" role="contentinfo" >
+	<ul id="footer-info" class="">
+		<li id="footer-info-lastmod"> This page was last edited on 19 November 2019, at 03:36<span class="anonymous-show">&#160;(UTC)</span>.</li>
+		<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+	</ul>
+	<ul id="footer-places" class="">
+		<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+		<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+		<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+		<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+		<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+		<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Parallel_tempering&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</div>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.132","walltime":"0.204","ppvisitednodes":{"value":301,"limit":1000000},"postexpandincludesize":{"value":11973,"limit":2097152},"templateargumentsize":{"value":13,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":17931,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  161.317      1 -total"," 57.71%   93.097      4 Template:Cite_journal"," 37.82%   61.016      1 Template:Context"," 27.18%   43.840      1 Template:Ambox"]},"scribunto":{"limitreport-timeusage":{"value":"0.084","limit":"10.000"},"limitreport-memusage":{"value":2826879,"limit":52428800}},"cachereport":{"origin":"mw1272","timestamp":"20200418200307","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Parallel tempering","url":"https:\/\/en.wikipedia.org\/wiki\/Parallel_tempering","sameAs":"http:\/\/www.wikidata.org\/entity\/Q7135015","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q7135015","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-02-02T08:02:54Z","dateModified":"2019-11-19T03:36:51Z","headline":"simulation method for physical systems, sampling from both high and low temperature configurations"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":122,"wgHostname":"mw1399"});});</script></body></html>

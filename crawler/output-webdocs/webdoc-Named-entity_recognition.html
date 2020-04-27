@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Named-entity recognition - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"XpvN9wpAAD4AAJv2YFMAAAAH","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Named-entity_recognition","wgTitle":"Named-entity recognition","wgCurRevisionId":951498559,"wgRevisionId":951498559,"wgArticleId":1906608,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated source tags","Pages using deprecated enclose attributes","All Wikipedia articles needing clarification","Wikipedia articles needing clarification from December 2018","Computational linguistics","Tasks of natural language processing"],"wgPageContentLanguage":"en",
+"wgPageContentModel":"wikitext","wgRelevantPageName":"Named-entity_recognition","wgRelevantArticleId":1906608,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q403574","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready",
+"jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","skins.vector.styles.legacy":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.startup","skins.vector.js","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.28"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Named-entity_recognition&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Named-entity_recognition&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Named-entity_recognition"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Named-entity_recognition rootpage-Named-entity_recognition skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Named-entity recognition</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">"Named entities" redirects here. For HTML, XML, and SGML named entities, see <a href="/wiki/List_of_XML_and_HTML_character_entity_references" title="List of XML and HTML character entity references">List of XML and HTML character entity references</a>.</div>
+<p><b>Named-entity recognition</b> (<b>NER</b>) (also known as <b>entity identification</b>, <b>entity chunking</b> and <b>entity extraction</b>) is a subtask of <a href="/wiki/Information_extraction" title="Information extraction">information extraction</a> that seeks to locate and classify <a href="/wiki/Named_entity" title="Named entity">named entity</a> mentioned in <a href="/wiki/Unstructured_data" title="Unstructured data">unstructured text</a> into pre-defined categories such as person names, organizations, locations, <a href="/wiki/Medical_classification" title="Medical classification">medical codes</a>, time expressions, quantities, monetary values, percentages, etc.
+</p><p>Most research on NER systems has been structured as taking an unannotated block of text, such as this one:
+</p>
+<style data-mw-deduplicate="TemplateStyles:r886047036">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 40px}.mw-parser-output .templatequote .templatequotecite{line-height:1.5em;text-align:left;padding-left:1.6em;margin-top:0}</style><blockquote class="templatequote"><p>Jim bought 300 shares of Acme Corp. in 2006.</p></blockquote>
+<p>And producing an annotated block of text that highlights the names of entities:
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886047036"/><blockquote class="templatequote"><p>[Jim]<sub>Person</sub> bought 300 shares of [Acme Corp.]<sub>Organization</sub> in [2006]<sub>Time</sub>.</p></blockquote>
+<p>In this example, a person name consisting of one token, a two-token company name and a temporal expression have been detected and classified.
+</p><p>State-of-the-art NER systems for English produce near-human performance. For example, the best system entering <a href="/wiki/Message_Understanding_Conference" title="Message Understanding Conference">MUC-7</a> scored 93.39% of <a href="/wiki/F1_score" title="F1 score">F-measure</a> while human annotators scored 97.60% and 96.95%.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Named-entity_recognition_platforms"><span class="tocnumber">1</span> <span class="toctext">Named-entity recognition platforms</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Problem_definition"><span class="tocnumber">2</span> <span class="toctext">Problem definition</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Formal_evaluation"><span class="tocnumber">2.1</span> <span class="toctext">Formal evaluation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Approaches"><span class="tocnumber">3</span> <span class="toctext">Approaches</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Problem_domains"><span class="tocnumber">4</span> <span class="toctext">Problem domains</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Current_challenges_and_research"><span class="tocnumber">5</span> <span class="toctext">Current challenges and research</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Named-entity_recognition_platforms">Named-entity recognition platforms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit&amp;section=1" title="Edit section: Named-entity recognition platforms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Notable NER platforms include:
+</p>
+<ul><li><a href="/wiki/General_Architecture_for_Text_Engineering" title="General Architecture for Text Engineering">GATE</a> supports NER across many languages and domains out of the box, usable via a <a href="/wiki/GUI" class="mw-redirect" title="GUI">graphical interface</a> and a <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> API.</li>
+<li><a href="/wiki/OpenNLP" class="mw-redirect" title="OpenNLP">OpenNLP</a> includes rule-based and statistical named-entity recognition.</li>
+<li><a href="/wiki/SpaCy" title="SpaCy">SpaCy</a> features fast statistical NER as well as an open-source named-entity visualizer.</li></ul>
+<h2><span class="mw-headline" id="Problem_definition">Problem definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit&amp;section=2" title="Edit section: Problem definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the expression <i><a href="/wiki/Named_entity" title="Named entity">named entity</a></i>, the word <i>named</i> restricts the task to those entities for which one or many strings, such as words or phrases, stands (fairly) consistently for some referent. This is closely related to <a href="/wiki/Rigid_designator" title="Rigid designator">rigid designators</a>, as defined by <a href="/wiki/Saul_Kripke" title="Saul Kripke">Kripke</a>,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> although in practice NER deals with many names and referents that are not philosophically "rigid". For instance, the <i>automotive company created by Henry Ford in 1903</i> can be referred to as <i>Ford</i> or <i>Ford Motor Company</i>, although "Ford" can refer to many other entities as well (see <a href="/wiki/Ford_(disambiguation)" class="mw-disambig" title="Ford (disambiguation)">Ford</a>). Rigid designators include proper names as well as terms for certain biological species and substances,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> but exclude pronouns (such as "it"; see <a href="/wiki/Coreference_resolution" class="mw-redirect" title="Coreference resolution">coreference resolution</a>), descriptions that pick out a referent by its properties (see also <a href="/wiki/De_dicto_and_de_re" title="De dicto and de re">De dicto and de re</a>), and names for kinds of things as opposed to individuals (for example "Bank").
+</p><p>Full named-entity recognition is often broken down, conceptually and possibly also in implementations,<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> as two distinct problems: detection of names, and <a href="/wiki/Statistical_classification" title="Statistical classification">classification</a> of the names by the type of entity they refer to (e.g. person, organization, location and other<sup id="cite_ref-conll03intro_7-0" class="reference"><a href="#cite_note-conll03intro-7">&#91;7&#93;</a></sup>).
+The first phase is typically simplified to a segmentation problem: names are defined to be contiguous spans of tokens, with no nesting, so that "Bank of America" is a single name, disregarding the fact that inside this name, the substring "America" is itself a name. This segmentation problem is formally similar to <a href="/wiki/Shallow_parsing" title="Shallow parsing">chunking</a>. The second phase requires choosing an <a href="/wiki/Ontology" title="Ontology">ontology</a> by which to organize categories of things.
+</p><p><a href="/wiki/Temporal_annotation" title="Temporal annotation">Temporal expressions</a> and some numerical expressions (i.e., money, percentages, etc.) may also be considered as named entities in the context of the NER task. While some instances of these types are good examples of rigid designators (e.g., the year 2001) there are also many invalid ones (e.g., I take my vacations in “June”). In the first case, the year <i>2001</i> refers to the <i>2001st year of the Gregorian calendar</i>. In the second case, the month <i>June</i> may refer to the month of an undefined year (<i>past June</i>, <i>next June</i>, <i>every June</i>, etc.). It is arguable that the definition of <i>named entity</i> is loosened in such cases for practical reasons. The definition of the term <i>named entity</i> is therefore not strict and often has to be explained in the context in which it is used.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
+</p><p>Certain <a href="/wiki/Hierarchy" title="Hierarchy">hierarchies</a> of named entity types have been proposed in the literature. <a href="/wiki/BBN_Technologies" title="BBN Technologies">BBN</a> categories, proposed in 2002, is used for <i><a href="/wiki/Question_answering" title="Question answering">question answering</a></i> and consists of 29 types and 64 subtypes.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> Sekine's extended hierarchy, proposed in 2002, is made of 200 subtypes.<sup id="cite_ref-nlp.cs.nyu.edu_10-0" class="reference"><a href="#cite_note-nlp.cs.nyu.edu-10">&#91;10&#93;</a></sup> More recently, in 2011 Ritter used a hierarchy based on common <a href="/wiki/Freebase_(database)" title="Freebase (database)">Freebase</a> entity types in ground-breaking experiments on NER over <a href="/wiki/Social_media" title="Social media">social media</a> text.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Formal_evaluation">Formal evaluation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit&amp;section=3" title="Edit section: Formal evaluation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To evaluate the quality of a NER system's output, several measures have been defined. The usual measures are called
+<a href="/wiki/Precision_and_recall" title="Precision and recall">Precision, recall</a>, and <a href="/wiki/F1_score" title="F1 score">F1 score</a>. However, several issues remain in just how to calculate those values.
+</p><p>These statistical measures work reasonably well for the obvious cases of finding or missing a real entity exactly; and for finding a non-entity. However, NER can fail in many other ways, many of which are arguably "partially correct", and should not be counted as complete success or failures. For example, identifying a real entity, but: 
+</p>
+<ul><li>with fewer tokens than desired (for example, missing the last token of "John Smith, M.D.")</li>
+<li>with more tokens than desired (for example, including the first word of "The University of MD")</li>
+<li>partitioning adjacent entities differently (for example, treating "Smith, Jones Robinson" as 2 vs. 3 entities)</li>
+<li>assigning it a completely wrong type (for example, calling a personal name an organization)</li>
+<li>assigning it a related but inexact type (for example, "substance" vs. "drug", or "school" vs. "organization")</li>
+<li>correctly identifying an entity, when what the user wanted was a smaller- or larger-scope entity (for example, identifying "James Madison" as an personal name, when it's part of "James Madison University". Some NER systems impose the restriction that entities may never overlap or nest, which means that in some cases one must make arbitrary or task-specific choices.</li></ul>
+<p>One overly simple method of measuring accuracy, is merely to count what fraction of all tokens in the text were correctly or incorrectly identified as part of entity references (or as being entities of the correct type). This suffers from at least two problems: First, the vast majority of tokens in real-world text are not part of entity names, so the baseline accuracy (always predict "not an entity") is extravagantly high, typically &gt;90%; and second, mispredicting the full span of an entity name is not properly penalized (finding only a person's first name when their last name follows might be scored as ½ accuracy).
+</p><p>In academic conferences such as CoNLL, a variant of the <a href="/wiki/F1_score" title="F1 score">F1 score</a> has been defined as follows:<sup id="cite_ref-conll03intro_7-1" class="reference"><a href="#cite_note-conll03intro-7">&#91;7&#93;</a></sup>
+</p>
+<ul><li><a href="/wiki/Precision_and_recall" title="Precision and recall">Precision</a> is the number of predicted entity name spans that line up <i>exactly</i> with spans in the <a href="/wiki/Ground_truth#Statistics_and_machine_learning" title="Ground truth">gold standard</a> evaluation data. I.e. when [<sub>Person</sub> Hans] [<sub>Person</sub> Blick] is predicted but [<sub>Person</sub> Hans Blick] was required, precision for the predicted name is zero. Precision is then averaged over all predicted entity names.</li>
+<li>Recall is similarly the number of names in the gold standard that appear at exactly the same location in the predictions.</li>
+<li>F1 score is the <a href="/wiki/Harmonic_mean" title="Harmonic mean">harmonic mean</a> of these two.</li></ul>
+<p>It follows from the above definition that any prediction that misses a single token, includes a spurious token, or has the wrong class, is a hard error and does not contribute positively to either precision or recall. Thus, this measure may be said to be pessimistic: it can be the case that many "errors" are close to correct, and might be adequate for a given purpose. For example, one system might always omit titles such as "Ms." or "Ph.D.", but be compared to a system or ground-truth data that expects titles to be included. In that case, every such name is treated as an error. Because of such issues, it is important actually to examine the kinds of errors, and decide how important they are given one's goals and requirements.
+</p><p>Evaluation models based on a token-by-token matching have been proposed.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> Such models may given partial credit for overlapping matches (such as using the <a href="/wiki/Jaccard_index" title="Jaccard index">Intersection over Union</a> criterion. They allow a finer grained evaluation and comparison of extraction systems.
+</p>
+<h2><span class="mw-headline" id="Approaches">Approaches</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit&amp;section=4" title="Edit section: Approaches">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>NER systems have been created that use linguistic <a href="/wiki/Formal_grammar" title="Formal grammar">grammar</a>-based techniques as well as <a href="/wiki/Statistical_model" title="Statistical model">statistical models</a> such as <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a>. Hand-crafted grammar-based systems typically obtain better precision, but at the cost of lower recall and months of work by experienced <a href="/wiki/Computational_linguistics" title="Computational linguistics">computational linguists</a>.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> Statistical NER systems typically require a large amount of manually <a href="/wiki/Annotation" title="Annotation">annotated</a> training data. <a href="/wiki/Semisupervised_learning" class="mw-redirect" title="Semisupervised learning">Semisupervised</a> approaches have been suggested to avoid part of the annotation effort.<sup id="cite_ref-phraseclust_14-0" class="reference"><a href="#cite_note-phraseclust-14">&#91;14&#93;</a></sup><sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup>
+</p><p>Many different classifier types have been used to perform machine-learned NER, with <a href="/wiki/Conditional_random_field" title="Conditional random field">conditional random fields</a> being a typical choice.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Problem_domains">Problem domains</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit&amp;section=5" title="Edit section: Problem domains">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In 2001, research indicated that even state-of-the-art NER systems were brittle, meaning that NER systems developed for one domain did not typically perform well on other domains.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup> Considerable effort is involved in tuning NER systems to perform well in a new domain; this is true for both rule-based and trainable statistical systems.
+</p><p>Early work in NER systems in the 1990s was aimed primarily at extraction from journalistic articles. Attention then turned to processing of military dispatches and reports. Later stages of the <a href="/wiki/Automatic_content_extraction" title="Automatic content extraction">automatic content extraction</a> (ACE) evaluation also included several types of informal text styles, such as <a href="/wiki/Weblog" class="mw-redirect" title="Weblog">weblogs</a> and <a href="/wiki/Transcription_(linguistics)" title="Transcription (linguistics)">text transcripts</a> from conversational telephone speech conversations. Since about 1998, there has been a great deal of interest in entity identification in the <a href="/wiki/Molecular_biology" title="Molecular biology">molecular biology</a>, <a href="/wiki/Bioinformatics" title="Bioinformatics">bioinformatics</a>, and medical <a href="/wiki/Natural_language_processing" title="Natural language processing">natural language processing</a> communities.  The most common entity of interest in that domain has been names of <a href="/wiki/Gene" title="Gene">genes</a> and gene products. There has been also considerable interest in the recognition of <a href="/wiki/Chemical_Entities_of_Biological_Interest" class="mw-redirect" title="Chemical Entities of Biological Interest">chemical entities</a> and drugs in the context of the CHEMDNER
+competition, with 27 teams participating in this task.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Current_challenges_and_research">Current challenges and research</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit&amp;section=6" title="Edit section: Current challenges and research">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Despite the high F1 numbers reported on the MUC-7 dataset, the problem of named-entity recognition is far from being solved. The main efforts are directed to reducing the annotation labor by employing <a href="/wiki/Semi-supervised_learning" title="Semi-supervised learning">semi-supervised learning</a>,<sup id="cite_ref-phraseclust_14-1" class="reference"><a href="#cite_note-phraseclust-14">&#91;14&#93;</a></sup><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup> robust performance across domains<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup><sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup> and scaling up to fine-grained entity types.<sup id="cite_ref-nlp.cs.nyu.edu_10-1" class="reference"><a href="#cite_note-nlp.cs.nyu.edu-10">&#91;10&#93;</a></sup><sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup> In recent years, many projects have turned to <a href="/wiki/Crowdsourcing" title="Crowdsourcing">crowdsourcing</a>, which is a promising solution to obtain high-quality aggregate human judgments for supervised and semi-supervised machine learning approaches to NER.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup> Another challenging task is devising models to deal with linguistically complex contexts such as Twitter and search queries.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup>
+</p><p>There are some researchers who did some comparisons about the NER performances from different statistical models such as HMM (<a href="/wiki/Hidden_Markov_model" title="Hidden Markov model">hidden Markov model</a>), ME (<a href="/wiki/Principle_of_maximum_entropy" title="Principle of maximum entropy">maximum entropy</a>), and CRF (<a href="/wiki/Conditional_random_field" title="Conditional random field">conditional random fields</a>), and feature sets.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;25&#93;</a></sup> And some researchers recently proposed graph-based semi-supervised learning model for language specific NER tasks.<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">&#91;26&#93;</a></sup>
+</p><p>A recently emerging task of identifying "important expressions" in text and <a href="/wiki/Entity_linking" title="Entity linking">cross-linking them to Wikipedia</a><sup id="cite_ref-27" class="reference"><a href="#cite_note-27">&#91;27&#93;</a></sup><sup id="cite_ref-28" class="reference"><a href="#cite_note-28">&#91;28&#93;</a></sup><sup id="cite_ref-29" class="reference"><a href="#cite_note-29">&#91;29&#93;</a></sup> can be seen as an instance of extremely fine-grained named-entity recognition, where the types are the actual Wikipedia pages describing the (potentially ambiguous) concepts. Below is an example output of a Wikification system:
+</p>
+<div class="mw-highlight mw-highlight-lang-xml mw-content-ltr" dir="ltr"><pre><span></span><span class="nt">&lt;ENTITY</span> <span class="na">url=</span><span class="s">&quot;http://en.wikipedia.org/wiki/Michael_I._Jordan&quot;</span><span class="nt">&gt;</span> Michael Jordan <span class="nt">&lt;/ENTITY&gt;</span> is a professor at <span class="nt">&lt;ENTITY</span> <span class="na">url=</span><span class="s">&quot;http://en.wikipedia.org/wiki/University_of_California,_Berkeley&quot;</span><span class="nt">&gt;</span> Berkeley <span class="nt">&lt;/ENTITY&gt;</span>
+</pre></div>
+<p>Another field that has seen progress but remains challenging is the application of NER to <a href="/wiki/Twitter" title="Twitter">Twitter</a> and other microblogs.<sup id="cite_ref-30" class="reference"><a href="#cite_note-30">&#91;30&#93;</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Vagueness" title="Wikipedia:Vagueness"><span title="This information is too vague. (December 2018)">vague</span></a></i>&#93;</sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Coreference#Coreference_resolution" title="Coreference">Coreference resolution</a></li>
+<li><a href="/wiki/Entity_linking" title="Entity linking">Entity linking</a> (aka named entity normalization, entity disambiguation)</li>
+<li><a href="/wiki/Information_extraction" title="Information extraction">Information extraction</a></li>
+<li><a href="/wiki/Knowledge_extraction" title="Knowledge extraction">Knowledge extraction</a></li>
+<li><a href="/wiki/Controlled_vocabulary" title="Controlled vocabulary">Controlled vocabulary</a></li>
+<li><a href="/wiki/Onomastics" title="Onomastics">Onomastics</a></li>
+<li><a href="/wiki/Record_linkage" title="Record linkage">Record linkage</a></li>
+<li><a href="/wiki/Smart_tag_(Microsoft)" title="Smart tag (Microsoft)">Smart tag (Microsoft)</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">
+Elaine Marsh, Dennis Perzanowski, "MUC-7 Evaluation of IE Technology: Overview of Results", 29 April 1998 <a rel="nofollow" class="external text" href="http://www-nlpir.nist.gov/related_projects/muc/proceedings/muc_7_proceedings/marsh_slides.pdf">PDF</a></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www-nlpir.nist.gov/related_projects/muc/proceedings/muc_7_toc.html#named">MUC-07 Proceedings (Named Entity Tasks)</a></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite id="CITEREFKripke1971" class="citation book">Kripke, Saul (1971).  M.K. Munitz (ed.). <i>Identity and Necessity</i>. New York: New York University Press. pp.&#160;135–64.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Identity+and+Necessity&amp;rft.pages=135-64&amp;rft.pub=New+York%3A+New+York+University+Press&amp;rft.date=1971&amp;rft.aulast=Kripke&amp;rft.aufirst=Saul&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r951705291">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg");background-repeat:no-repeat;background-size:12px;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite id="CITEREFLaPorte" class="citation">LaPorte, Joseph, <a rel="nofollow" class="external text" href="https://plato.stanford.edu/entries/rigid-designators/"><i>Rigid Designators</i></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Rigid+Designators&amp;rft.aulast=LaPorte&amp;rft.aufirst=Joseph&amp;rft_id=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Frigid-designators%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite id="CITEREFNadeauSekine2007" class="citation conference">Nadeau, David; Sekine, Satoshi (2007). <a rel="nofollow" class="external text" href="http://nlp.cs.nyu.edu/sekine/papers/li07.pdf"><i>A survey of named entity recognition and classification</i></a> <span class="cs1-format">(PDF)</span>. Lingvisticae Investigationes.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=A+survey+of+named+entity+recognition+and+classification&amp;rft.date=2007&amp;rft.aulast=Nadeau&amp;rft.aufirst=David&amp;rft.au=Sekine%2C+Satoshi&amp;rft_id=http%3A%2F%2Fnlp.cs.nyu.edu%2Fsekine%2Fpapers%2Fli07.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite id="CITEREFCarrerasMàrquezPadró2003" class="citation conference">Carreras, Xavier; Màrquez, Lluís; Padró, Lluís (2003). <a rel="nofollow" class="external text" href="https://www.aclweb.org/anthology/D/D03/W03-0421.pdf"><i>A simple named entity extractor using AdaBoost</i></a> <span class="cs1-format">(PDF)</span>. CoNLL.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=A+simple+named+entity+extractor+using+AdaBoost&amp;rft.date=2003&amp;rft.aulast=Carreras&amp;rft.aufirst=Xavier&amp;rft.au=M%C3%A0rquez%2C+Llu%C3%ADs&amp;rft.au=Padr%C3%B3%2C+Llu%C3%ADs&amp;rft_id=https%3A%2F%2Fwww.aclweb.org%2Fanthology%2FD%2FD03%2FW03-0421.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-conll03intro-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-conll03intro_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-conll03intro_7-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFTjong_Kim_SangDe_Meulder2003" class="citation conference">Tjong Kim Sang, Erik F.; De Meulder, Fien (2003). <a rel="nofollow" class="external text" href="http://www.aclweb.org/anthology/W03-0419"><i>Introduction to the CoNLL-2003 shared task: Language-independent named entity recognition</i></a>. CoNLL.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Introduction+to+the+CoNLL-2003+shared+task%3A+Language-independent+named+entity+recognition&amp;rft.date=2003&amp;rft.aulast=Tjong+Kim+Sang&amp;rft.aufirst=Erik+F.&amp;rft.au=De+Meulder%2C+Fien&amp;rft_id=http%3A%2F%2Fwww.aclweb.org%2Fanthology%2FW03-0419&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://webknox.com/p/named-entity-definition">Named Entity Definition</a>. Webknox.com. Retrieved on 2013-07-21.</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite id="CITEREFBrunstein" class="citation web">Brunstein, Ada. <a rel="nofollow" class="external text" href="https://catalog.ldc.upenn.edu/docs/LDC2005T33/BBN-Types-Subtypes.html">"Annotation Guidelines for Answer Types"</a>. <i>LDC Catalog</i>. Linguistic Data Consortium<span class="reference-accessdate">. Retrieved <span class="nowrap">21 July</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=LDC+Catalog&amp;rft.atitle=Annotation+Guidelines+for+Answer+Types&amp;rft.aulast=Brunstein&amp;rft.aufirst=Ada&amp;rft_id=https%3A%2F%2Fcatalog.ldc.upenn.edu%2Fdocs%2FLDC2005T33%2FBBN-Types-Subtypes.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-nlp.cs.nyu.edu-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-nlp.cs.nyu.edu_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-nlp.cs.nyu.edu_10-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://nlp.cs.nyu.edu/ene/">Sekine's Extended Named Entity Hierarchy</a>. Nlp.cs.nyu.edu. Retrieved on 2013-07-21.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite id="CITEREFRitterClarkMausamEtzioni.2011" class="citation conference">Ritter, A.; Clark, S.; Mausam; Etzioni., O. (2011). <a rel="nofollow" class="external text" href="https://aclweb.org/anthology/D/D11/D11-1141.pdf"><i>Named Entity Recognition in Tweets: An Experimental Study</i></a> <span class="cs1-format">(PDF)</span>. Proc. Empirical Methods in Natural Language Processing.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Named+Entity+Recognition+in+Tweets%3A+An+Experimental+Study&amp;rft.date=2011&amp;rft.aulast=Ritter&amp;rft.aufirst=A.&amp;rft.au=Clark%2C+S.&amp;rft.au=Mausam&amp;rft.au=Etzioni.%2C+O.&amp;rft_id=https%3A%2F%2Faclweb.org%2Fanthology%2FD%2FD11%2FD11-1141.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite id="CITEREFEsuliSebastiani2010" class="citation conference">Esuli, Andrea; Sebastiani, Fabrizio (2010). <a rel="nofollow" class="external text" href="http://nmis.isti.cnr.it/sebastiani/Publications/CLEF10.pdf"><i>Evaluating Information Extraction</i></a> <span class="cs1-format">(PDF)</span>. Cross-Language Evaluation Forum (CLEF). pp.&#160;100–111.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Evaluating+Information+Extraction&amp;rft.pages=100-111&amp;rft.date=2010&amp;rft.aulast=Esuli&amp;rft.aufirst=Andrea&amp;rft.au=Sebastiani%2C+Fabrizio&amp;rft_id=http%3A%2F%2Fnmis.isti.cnr.it%2Fsebastiani%2FPublications%2FCLEF10.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite id="CITEREFKapetaniosTatarSacarea2013" class="citation book">Kapetanios, Epaminondas; Tatar, Doina; Sacarea, Christian (2013-11-14). <a rel="nofollow" class="external text" href="https://books.google.com/books?id=YXv6AQAAQBAJ&amp;pg=PA298&amp;lpg=PA298"><i>Natural Language Processing: Semantic Aspects</i></a>. CRC Press. p.&#160;298. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781466584969" title="Special:BookSources/9781466584969"><bdi>9781466584969</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Natural+Language+Processing%3A+Semantic+Aspects&amp;rft.pages=298&amp;rft.pub=CRC+Press&amp;rft.date=2013-11-14&amp;rft.isbn=9781466584969&amp;rft.aulast=Kapetanios&amp;rft.aufirst=Epaminondas&amp;rft.au=Tatar%2C+Doina&amp;rft.au=Sacarea%2C+Christian&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DYXv6AQAAQBAJ%26pg%3DPA298%26lpg%3DPA298&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-phraseclust-14"><span class="mw-cite-backlink">^ <a href="#cite_ref-phraseclust_14-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-phraseclust_14-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFLinWu2009" class="citation conference">Lin, Dekang; Wu, Xiaoyun (2009). <a rel="nofollow" class="external text" href="http://www.aclweb.org/anthology/P/P09/P09-1116.pdf"><i>Phrase clustering for discriminative learning</i></a> <span class="cs1-format">(PDF)</span>. Annual Meeting of the <a href="/wiki/Association_for_Computational_Linguistics" title="Association for Computational Linguistics">ACL</a> and IJCNLP. pp.&#160;1030–1038.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Phrase+clustering+for+discriminative+learning&amp;rft.pages=1030-1038&amp;rft.date=2009&amp;rft.aulast=Lin&amp;rft.aufirst=Dekang&amp;rft.au=Wu%2C+Xiaoyun&amp;rft_id=http%3A%2F%2Fwww.aclweb.org%2Fanthology%2FP%2FP09%2FP09-1116.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite id="CITEREFNothman2013" class="citation journal">Nothman, Joel;  et al. (2013). <a href="/wiki/Wikipedia#Scientific_use" title="Wikipedia">"Learning multilingual named entity recognition from Wikipedia"</a>. <i>Artificial Intelligence</i>. <b>194</b>: 151–175. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.artint.2012.03.006">10.1016/j.artint.2012.03.006</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Artificial+Intelligence&amp;rft.atitle=Learning+multilingual+named+entity+recognition+from+Wikipedia&amp;rft.volume=194&amp;rft.pages=151-175&amp;rft.date=2013&amp;rft_id=info%3Adoi%2F10.1016%2Fj.artint.2012.03.006&amp;rft.aulast=Nothman&amp;rft.aufirst=Joel&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><cite id="CITEREFJenny_Rose_FinkelTrond_GrenagerChristopher_Manning2005" class="citation conference">Jenny Rose Finkel; Trond Grenager; Christopher Manning (2005). <a rel="nofollow" class="external text" href="http://nlp.stanford.edu/~manning/papers/gibbscrf3.pdf"><i>Incorporating Non-local Information into Information Extraction Systems by Gibbs Sampling</i></a> <span class="cs1-format">(PDF)</span>. 43rd Annual Meeting of the <a href="/wiki/Association_for_Computational_Linguistics" title="Association for Computational Linguistics">Association for Computational Linguistics</a>. pp.&#160;363–370.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Incorporating+Non-local+Information+into+Information+Extraction+Systems+by+Gibbs+Sampling&amp;rft.pages=363-370&amp;rft.date=2005&amp;rft.au=Jenny+Rose+Finkel&amp;rft.au=Trond+Grenager&amp;rft.au=Christopher+Manning&amp;rft_id=http%3A%2F%2Fnlp.stanford.edu%2F~manning%2Fpapers%2Fgibbscrf3.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite id="CITEREFPoibeauKosseim2001" class="citation journal">Poibeau, Thierry; Kosseim, Leila (2001). <a rel="nofollow" class="external text" href="https://pdfs.semanticscholar.org/0afb/2c9047686ff31bc8e2177324c2c62f616db6.pdf">"Proper Name Extraction from Non-Journalistic Texts"</a> <span class="cs1-format">(PDF)</span>. <i>Language and Computers</i>. <b>37</b> (1): 144–157.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Language+and+Computers&amp;rft.atitle=Proper+Name+Extraction+from+Non-Journalistic+Texts&amp;rft.volume=37&amp;rft.issue=1&amp;rft.pages=144-157&amp;rft.date=2001&amp;rft.aulast=Poibeau&amp;rft.aufirst=Thierry&amp;rft.au=Kosseim%2C+Leila&amp;rft_id=https%3A%2F%2Fpdfs.semanticscholar.org%2F0afb%2F2c9047686ff31bc8e2177324c2c62f616db6.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite id="CITEREFKrallingerLeitnerRabalVazquez" class="citation book">Krallinger, M; Leitner, F; Rabal, O; Vazquez, M; Oyarzabal, J; Valencia, A. "Overview of the chemical compound and drug name recognition (CHEMDNER) task". <i>Proceedings of the Fourth BioCreative Challenge Evaluation Workshop vol. 2</i>. pp.&#160;6–37. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.684.4118">10.1.1.684.4118</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Overview+of+the+chemical+compound+and+drug+name+recognition+%28CHEMDNER%29+task&amp;rft.btitle=Proceedings+of+the+Fourth+BioCreative+Challenge+Evaluation+Workshop+vol.+2&amp;rft.pages=6-37&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.684.4118&amp;rft.aulast=Krallinger&amp;rft.aufirst=M&amp;rft.au=Leitner%2C+F&amp;rft.au=Rabal%2C+O&amp;rft.au=Vazquez%2C+M&amp;rft.au=Oyarzabal%2C+J&amp;rft.au=Valencia%2C+A&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text">Turian, J., Ratinov, L., &amp; Bengio, Y. (2010, July). Word representations: a simple and general method for semi-supervised learning. In Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics (pp. 384-394). Association for Computational Linguistics. <a rel="nofollow" class="external text" href="http://cogcomp.cs.illinois.edu/papers/TurianRaBe2010.pdf">PDF</a></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text">Ratinov, L., &amp; Roth, D. (2009, June). <a rel="nofollow" class="external text" href="http://cogcomp.cs.illinois.edu/papers/RatinovRo09.pdf">Design challenges and misconceptions in named entity recognition.</a> In <i>Proceedings of the Thirteenth Conference on Computational Natural Language Learning</i> (pp. 147-155). Association for Computational Linguistics.</span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20100613114442/http://www.cs.utah.edu/~hal/docs/daume07easyadapt.pdf">"Frustratingly Easy Domain Adaptation"</a> <span class="cs1-format">(PDF)</span>. Archived from <a rel="nofollow" class="external text" href="http://www.cs.utah.edu/~hal/docs/daume07easyadapt.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2010-06-13<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-04-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Frustratingly+Easy+Domain+Adaptation.&amp;rft_id=http%3A%2F%2Fwww.cs.utah.edu%2F~hal%2Fdocs%2Fdaume07easyadapt.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F11880592_49">Fine-Grained Named Entity Recognition Using Conditional Random Fields for Question Answering.</a></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.jmir.org/2013/4/e73/">Web 2.0-based crowdsourcing for high-quality gold standard development in clinical Natural Language Processing</a></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><cite id="CITEREFEiseltFigueroa2013" class="citation conference">Eiselt, Andreas; Figueroa, Alejandro (2013). <a rel="nofollow" class="external text" href="https://www.researchgate.net/publication/264083508"><i>A Two-Step Named Entity Recognizer for Open-Domain Search Queries</i></a>. IJCNLP. pp.&#160;829–833.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=A+Two-Step+Named+Entity+Recognizer+for+Open-Domain+Search+Queries&amp;rft.pages=829-833&amp;rft.date=2013&amp;rft.aulast=Eiselt&amp;rft.aufirst=Andreas&amp;rft.au=Figueroa%2C+Alejandro&amp;rft_id=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F264083508&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text">Han, Li-Feng Aaron, Wong, Fai, Chao, Lidia Sam. (2013). Chinese Named Entity Recognition with Conditional Random Fields in the Light of Chinese Characteristics. Proceeding of International Conference of Language Processing and Intelligent Information Systems. M.A. Klopotek et al. (Eds.): IIS 2013, LNCS Vol. 7912, pp. 57–68 <a rel="nofollow" class="external autonumber" href="https://link.springer.com/chapter/10.1007%2F978-3-642-38634-3_8#page-1">[1]</a></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text">Han, Li-Feng Aaron, Wong, Zeng, Xiaodong, Derek Fai, Chao, Lidia Sam. (2015). Chinese Named Entity Recognition with Graph-based Semi-supervised Learning Model. In Proceedings of SIGHAN workshop in ACL-IJCNLP. 2015. <a rel="nofollow" class="external autonumber" href="http://www.aclweb.org/anthology/W15-3103">[2]</a></span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://dl.acm.org/citation.cfm?id=1321475">Linking Documents to Encyclopedic Knowledge.</a></span>
+</li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20190125061325/https://www.cs.waikato.ac.nz/~ihw/papers/08-DNM-IHW-LearningToLinkWithWikipedia.pdf">"Learning to link with Wikipedia"</a> <span class="cs1-format">(PDF)</span>. Archived from <a rel="nofollow" class="external text" href="http://www.cs.waikato.ac.nz/~ihw/papers/08-DNM-IHW-LearningToLinkWithWikipedia.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2019-01-25<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Learning+to+link+with+Wikipedia.&amp;rft_id=http%3A%2F%2Fwww.cs.waikato.ac.nz%2F~ihw%2Fpapers%2F08-DNM-IHW-LearningToLinkWithWikipedia.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANamed-entity+recognition" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://cogcomp.cs.illinois.edu/papers/RRDA11.pdf">Local and Global Algorithms for Disambiguation to Wikipedia.</a></span>
+</li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text">Derczynski, Leon and Diana Maynard, Giuseppe Rizzo, Marieke van Erp, Genevieve Gorrell, Raphael Troncy, Johann Petrak, and Kalian Botcheva (2014). “Analysis of named entity recognition and linking for tweets”. <i>Information Processing and Management</i> 51(2)&#160;: pages 32-49.</span>
+</li>
+</ol></div>
+<div role="navigation" class="navbox" aria-labelledby="Natural_language_processing" style="padding:3px"><table class="nowraplinks hlist mw-collapsible mw-collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Natural_language_processing" title="Template:Natural language processing"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Natural_language_processing" title="Template talk:Natural language processing"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Natural_language_processing&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Natural_language_processing" style="font-size:114%;margin:0 4em"><a href="/wiki/Natural_language_processing" title="Natural language processing">Natural language processing</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">General terms</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Natural_language_understanding" class="mw-redirect" title="Natural language understanding">Natural language understanding</a></li>
+<li><a href="/wiki/Text_corpus" title="Text corpus">Text corpus</a></li>
+<li><a href="/wiki/Speech_corpus" title="Speech corpus">Speech corpus</a></li>
+<li><a href="/wiki/Stop_words" title="Stop words">Stopwords</a></li>
+<li><a href="/wiki/Bag-of-words_model" title="Bag-of-words model">Bag-of-words</a></li>
+<li><a href="/wiki/AI-complete" title="AI-complete">AI-complete</a></li>
+<li><a href="/wiki/N-gram" title="N-gram">n-gram</a> (<a href="/wiki/Bigram" title="Bigram">Bigram</a>, <a href="/wiki/Trigram" title="Trigram">Trigram</a>)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Text_mining" title="Text mining">Text analysis</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Text_segmentation" title="Text segmentation">Text segmentation</a></li>
+<li><a href="/wiki/Part-of-speech_tagging" title="Part-of-speech tagging">Part-of-speech tagging</a></li>
+<li><a href="/wiki/Shallow_parsing" title="Shallow parsing">Text chunking</a></li>
+<li><a href="/wiki/Compound_term_processing" class="mw-redirect" title="Compound term processing">Compound term processing</a></li>
+<li><a href="/wiki/Collocation_extraction" title="Collocation extraction">Collocation extraction</a></li>
+<li><a href="/wiki/Stemming" title="Stemming">Stemming</a></li>
+<li><a href="/wiki/Lemmatisation" title="Lemmatisation">Lemmatisation</a></li>
+<li><a class="mw-selflink selflink">Named-entity recognition</a></li>
+<li><a href="/wiki/Coreference#Coreference_resolution" title="Coreference">Coreference resolution</a></li>
+<li><a href="/wiki/Sentiment_analysis" title="Sentiment analysis">Sentiment analysis</a></li>
+<li><a href="/wiki/Concept_mining" title="Concept mining">Concept mining</a></li>
+<li><a href="/wiki/Parsing" title="Parsing">Parsing</a></li>
+<li><a href="/wiki/Word-sense_disambiguation" title="Word-sense disambiguation">Word-sense disambiguation</a></li>
+<li><a href="/wiki/Ontology_learning" title="Ontology learning">Ontology learning</a></li>
+<li><a href="/wiki/Terminology_extraction" title="Terminology extraction">Terminology extraction</a></li>
+<li><a href="/wiki/Textual_entailment" title="Textual entailment">Textual entailment</a></li>
+<li><a href="/wiki/Truecasing" title="Truecasing">Truecasing</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Automatic_summarization" title="Automatic summarization">Automatic summarization</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Multi-document_summarization" title="Multi-document summarization">Multi-document summarization</a></li>
+<li><a href="/wiki/Sentence_extraction" title="Sentence extraction">Sentence extraction</a></li>
+<li><a href="/wiki/Text_simplification" title="Text simplification">Text simplification</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Machine_translation" title="Machine translation">Machine translation</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Computer-assisted_translation" title="Computer-assisted translation">Computer-assisted</a></li>
+<li><a href="/wiki/Example-based_machine_translation" title="Example-based machine translation">Example-based</a></li>
+<li><a href="/wiki/Rule-based_machine_translation" title="Rule-based machine translation">Rule-based</a></li>
+<li><a href="/wiki/Neural_machine_translation" title="Neural machine translation">Neural</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Automatic_identification_and_data_capture" title="Automatic identification and data capture">Automatic identification<br />and data capture</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Speech_recognition" title="Speech recognition">Speech recognition</a></li>
+<li><a href="/wiki/Speech_synthesis" title="Speech synthesis">Speech synthesis</a></li>
+<li><a href="/wiki/Optical_character_recognition" title="Optical character recognition">Optical character recognition</a></li>
+<li><a href="/wiki/Natural_language_generation" class="mw-redirect" title="Natural language generation">Natural language generation</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Topic_model" title="Topic model">Topic model</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Pachinko_allocation" title="Pachinko allocation">Pachinko allocation</a></li>
+<li><a href="/wiki/Latent_Dirichlet_allocation" title="Latent Dirichlet allocation">Latent Dirichlet allocation</a></li>
+<li><a href="/wiki/Latent_semantic_analysis" title="Latent semantic analysis">Latent semantic analysis</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Computer-assisted_reviewing" title="Computer-assisted reviewing">Computer-assisted<br />reviewing</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Automated_essay_scoring" title="Automated essay scoring">Automated essay scoring</a></li>
+<li><a href="/wiki/Concordancer" title="Concordancer">Concordancer</a></li>
+<li><a href="/wiki/Grammar_checker" title="Grammar checker">Grammar checker</a></li>
+<li><a href="/wiki/Predictive_text" title="Predictive text">Predictive text</a></li>
+<li><a href="/wiki/Spell_checker" title="Spell checker">Spell checker</a></li>
+<li><a href="/wiki/Syntax_guessing" title="Syntax guessing">Syntax guessing</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Natural_language_user_interface" class="mw-redirect" title="Natural language user interface">Natural language<br />user interface</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Automated_online_assistant" class="mw-redirect" title="Automated online assistant">Automated online assistant</a></li>
+<li><a href="/wiki/Chatbot" title="Chatbot">Chatbot</a></li>
+<li><a href="/wiki/Interactive_fiction" title="Interactive fiction">Interactive fiction</a></li>
+<li><a href="/wiki/Question_answering" title="Question answering">Question answering</a></li>
+<li><a href="/wiki/Voice_user_interface" title="Voice user interface">Voice user interface</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1353
+Cached time: 20200418184927
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.344 seconds
+Real time usage: 0.482 seconds
+Preprocessor visited node count: 1440/1000000
+Post‐expand include size: 45648/2097152 bytes
+Template argument size: 998/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 74440/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.167/10.000 seconds
+Lua memory usage: 4.74 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  422.349      1 -total
+ 50.59%  213.670      1 Template:Reflist
+ 20.58%   86.919      3 Template:Cite_book
+ 18.28%   77.226      1 Template:Vague
+ 16.14%   68.163      1 Template:Fix
+ 12.07%   50.991      1 Template:Category_handler
+ 12.06%   50.918      8 Template:Cite_conference
+  8.79%   37.120      1 Template:Redirect
+  7.74%   32.692      2 Template:Quote
+  5.48%   23.125      2 Template:Cite_journal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1906608-0!canonical and timestamp 20200418184927 and revision id 951498559
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Named-entity_recognition&amp;oldid=951498559">https://en.wikipedia.org/w/index.php?title=Named-entity_recognition&amp;oldid=951498559</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Computational_linguistics" title="Category:Computational linguistics">Computational linguistics</a></li><li><a href="/wiki/Category:Tasks_of_natural_language_processing" title="Category:Tasks of natural language processing">Tasks of natural language processing</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_source_tags" title="Category:Pages using deprecated source tags">Pages using deprecated source tags</a></li><li><a href="/wiki/Category:Pages_using_deprecated_enclose_attributes" title="Category:Pages using deprecated enclose attributes">Pages using deprecated enclose attributes</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_needing_clarification" title="Category:All Wikipedia articles needing clarification">All Wikipedia articles needing clarification</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_December_2018" title="Category:Wikipedia articles needing clarification from December 2018">Wikipedia articles needing clarification from December 2018</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul >
+		<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Named-entity+recognition" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Named-entity+recognition" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+		<div id="left-navigation">
+			<div id="p-namespaces" role="navigation" class="vectorTabs " aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="/wiki/Named-entity_recognition" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="/wiki/Talk:Named-entity_recognition" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li>
+	</ul>
+</div>
+
+			<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+		</div>
+		<div id="right-navigation">
+			<div id="p-views" role="navigation" class="vectorTabs " aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="/wiki/Named-entity_recognition">Read</a></li><li id="ca-edit" class="collapsible"><a href="/w/index.php?title=Named-entity_recognition&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="collapsible"><a href="/w/index.php?title=Named-entity_recognition&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+	</ul>
+</div>
+
+			<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Search" name="title"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="/wiki/Main_Page"></a>
+	</div>
+	<div class="portal" role="navigation" id="p-navigation"  aria-labelledby="p-navigation-label">
+	<h3  id="p-navigation-label">
+		Navigation
+	</h3>
+	<div class="body">
+		<ul><li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Wikipedia:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li></ul>
+		
+	</div>
+</div>
+
+
+	<div class="portal" role="navigation" id="p-interaction"  aria-labelledby="p-interaction-label">
+	<h3  id="p-interaction-label">
+		Interaction
+	</h3>
+	<div class="body">
+		<ul><li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-tb"  aria-labelledby="p-tb-label">
+	<h3  id="p-tb-label">
+		Tools
+	</h3>
+	<div class="body">
+		<ul><li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Named-entity_recognition" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Named-entity_recognition" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Named-entity_recognition&amp;oldid=951498559" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Named-entity_recognition&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q403574" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Named-entity_recognition&amp;id=951498559&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-coll-print_export"  aria-labelledby="p-coll-print_export-label">
+	<h3  id="p-coll-print_export-label">
+		Print/export
+	</h3>
+	<div class="body">
+		<ul><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Named-entity+recognition">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Named-entity+recognition&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Named-entity_recognition&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-lang"  aria-labelledby="p-lang-label">
+	<h3  id="p-lang-label">
+		Languages
+	</h3>
+	<div class="body">
+		<ul><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Named-entity_recognition" title="Named-entity recognition – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Reconocimiento_de_entidades_nombradas" title="Reconocimiento de entidades nombradas – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Entitateen_izenen_ezagutzea" title="Entitateen izenen ezagutzea – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Reconnaissance_d%27entit%C3%A9s_nomm%C3%A9es" title="Reconnaissance d&#039;entités nommées – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%B4%EB%AA%85_%EC%9D%B8%EC%8B%9D" title="개체명 인식 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E5%9B%BA%E6%9C%89%E8%A1%A8%E7%8F%BE%E6%8A%BD%E5%87%BA" title="固有表現抽出 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Reconhecimento_de_entidade_mencionada" title="Reconhecimento de entidade mencionada – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Recunoa%C8%99terea_entit%C4%83%C8%9Bilor_cu_nume" title="Recunoașterea entităților cu nume – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B7%D0%BF%D1%96%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D1%96%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%85_%D1%81%D1%83%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9" title="Розпізнавання іменованих сутностей – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Nh%E1%BA%ADn_d%E1%BA%A1ng_th%E1%BB%B1c_th%E1%BB%83_c%C3%B3_t%C3%AAn" title="Nhận dạng thực thể có tên – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%91%BD%E5%90%8D%E5%AE%9E%E4%BD%93%E8%AF%86%E5%88%AB" title="命名实体识别 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q403574#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div id="footer" role="contentinfo" >
+	<ul id="footer-info" class="">
+		<li id="footer-info-lastmod"> This page was last edited on 17 April 2020, at 13:33<span class="anonymous-show">&#160;(UTC)</span>.</li>
+		<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+	</ul>
+	<ul id="footer-places" class="">
+		<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+		<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+		<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+		<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+		<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+		<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Named-entity_recognition&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</div>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.344","walltime":"0.482","ppvisitednodes":{"value":1440,"limit":1000000},"postexpandincludesize":{"value":45648,"limit":2097152},"templateargumentsize":{"value":998,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":74440,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  422.349      1 -total"," 50.59%  213.670      1 Template:Reflist"," 20.58%   86.919      3 Template:Cite_book"," 18.28%   77.226      1 Template:Vague"," 16.14%   68.163      1 Template:Fix"," 12.07%   50.991      1 Template:Category_handler"," 12.06%   50.918      8 Template:Cite_conference","  8.79%   37.120      1 Template:Redirect","  7.74%   32.692      2 Template:Quote","  5.48%   23.125      2 Template:Cite_journal"]},"scribunto":{"limitreport-timeusage":{"value":"0.167","limit":"10.000"},"limitreport-memusage":{"value":4967162,"limit":52428800}},"cachereport":{"origin":"mw1353","timestamp":"20200418184927","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Named-entity recognition","url":"https:\/\/en.wikipedia.org\/wiki\/Named-entity_recognition","sameAs":"http:\/\/www.wikidata.org\/entity\/Q403574","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q403574","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-05-18T22:50:41Z","dateModified":"2020-04-17T13:33:32Z","headline":"subtask of information extraction that locates and classifies named entity mentions in unstructured text into pre-defined categories"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":84,"wgHostname":"mw1267"});});</script></body></html>

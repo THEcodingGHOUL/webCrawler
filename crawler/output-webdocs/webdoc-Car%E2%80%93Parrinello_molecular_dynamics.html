@@ -1,0 +1,871 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Car–Parrinello molecular dynamics - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"XqaiYwpAAMEAAOarra4AAABB","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Car–Parrinello_molecular_dynamics","wgTitle":"Car–Parrinello molecular dynamics","wgCurRevisionId":953126039,"wgRevisionId":953126039,"wgArticleId":6770335,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Density functional theory","Density functional theory software","Computational chemistry","Computational chemistry software","Molecular dynamics","Molecular dynamics software","Quantum chemistry","Theoretical chemistry","Mathematical chemistry","Simulation software"
+,"Scientific simulation software","Physics software","Chemistry software","Science software","Algorithms","Computational physics","Electronic structure methods"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Car–Parrinello_molecular_dynamics","wgRelevantArticleId":6770335,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q4300351","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={
+"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","skins.vector.styles.legacy":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.startup","skins.vector.js","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming",
+"ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.28"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Car%E2%80%93Parrinello_molecular_dynamics"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Car–Parrinello_molecular_dynamics rootpage-Car–Parrinello_molecular_dynamics skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Car–Parrinello molecular dynamics</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>Car–Parrinello molecular dynamics</b> or <b>CPMD</b> refers to either a method used in molecular dynamics (also known as the <b>Car–Parrinello method</b>) or the <a href="/wiki/Computational_chemistry" title="Computational chemistry">computational chemistry</a> software package used to implement this method.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p>The CPMD method is related to the more common <a href="/wiki/Born-Oppenheimer" class="mw-redirect" title="Born-Oppenheimer">Born–Oppenheimer</a> <a href="/wiki/Molecular_dynamics" title="Molecular dynamics">molecular dynamics</a> (BOMD) method in that the <a href="/wiki/Quantum_mechanical" class="mw-redirect" title="Quantum mechanical">quantum mechanical</a> effect of the <a href="/wiki/Electron" title="Electron">electrons</a> is included in the calculation of energy and forces for the <a href="/wiki/Classical_mechanics" title="Classical mechanics">classical</a> motion of the <a href="/wiki/Atomic_nucleus" title="Atomic nucleus">nuclei</a>. However, whereas BOMD treats the <a href="/wiki/Electronic_structure" title="Electronic structure">electronic structure</a> problem within the time-<i>independent</i> <a href="/wiki/Schr%C3%B6dinger_equation" title="Schrödinger equation">Schrödinger equation</a>, CPMD explicitly includes the <a href="/wiki/Electrons" class="mw-redirect" title="Electrons">electrons</a> as active degrees of freedom, via (fictitious) dynamical variables.
+</p><p>The software is a parallelized <a href="/wiki/Plane_wave" title="Plane wave">plane wave</a> / <a href="/wiki/Pseudopotential" title="Pseudopotential">pseudopotential</a> implementation of <a href="/wiki/Density_functional_theory" title="Density functional theory">density functional theory</a>, particularly designed for <i><a href="/wiki/Ab_initio_quantum_chemistry_methods" title="Ab initio quantum chemistry methods">ab initio</a></i> <a href="/wiki/Molecular_dynamics" title="Molecular dynamics">molecular dynamics</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Car–Parrinello_method"><span class="tocnumber">1</span> <span class="toctext">Car&#8211;Parrinello method</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#General_approach"><span class="tocnumber">2</span> <span class="toctext">General approach</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Fictitious_dynamics"><span class="tocnumber">3</span> <span class="toctext">Fictitious dynamics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Lagrangian"><span class="tocnumber">3.1</span> <span class="toctext">Lagrangian</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Orthogonality_constraint"><span class="tocnumber">3.2</span> <span class="toctext">Orthogonality constraint</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Equations_of_motion"><span class="tocnumber">3.3</span> <span class="toctext">Equations of motion</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Born–Oppenheimer_limit"><span class="tocnumber">3.4</span> <span class="toctext">Born&#8211;Oppenheimer limit</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Application"><span class="tocnumber">4</span> <span class="toctext">Application</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span id="Car.E2.80.93Parrinello_method"></span><span class="mw-headline" id="Car–Parrinello_method">Car&#8211;Parrinello method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=1" title="Edit section: Car–Parrinello method">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <b>Car&#8211;Parrinello method</b> is a type of <a href="/wiki/Molecular_dynamics" title="Molecular dynamics">molecular dynamics</a>, usually employing periodic <a href="/wiki/Boundary_conditions" class="mw-redirect" title="Boundary conditions">boundary conditions</a>, planewave <a href="/wiki/Basis_set_(chemistry)" title="Basis set (chemistry)">basis sets</a>, and <a href="/wiki/Density_functional_theory" title="Density functional theory">density functional theory</a>, proposed by <a href="/wiki/Roberto_Car" title="Roberto Car">Roberto Car</a> and <a href="/wiki/Michele_Parrinello" title="Michele Parrinello">Michele Parrinello</a> in 1985, who were subsequently awarded the <a href="/wiki/Dirac_Prize" class="mw-redirect" title="Dirac Prize">Dirac Medal</a> by <a href="/wiki/ICTP" class="mw-redirect" title="ICTP">ICTP</a> in 2009.
+</p><p>In contrast to <a href="/wiki/Born%E2%80%93Oppenheimer_approximation" title="Born–Oppenheimer approximation">Born&#8211;Oppenheimer</a> <a href="/wiki/Molecular_dynamics" title="Molecular dynamics">molecular dynamics</a> wherein the nuclear (ions) degree of freedom are propagated using ionic forces which are calculated at each iteration by approximately solving the electronic problem with conventional matrix diagonalization methods, the Car&#8211;Parrinello method explicitly introduces the electronic degrees of freedom as (fictitious) dynamical variables, writing an extended <a href="/wiki/Lagrangian_mechanics" title="Lagrangian mechanics">Lagrangian</a> for the system which leads to a system of coupled <a href="/wiki/Equations_of_motion" title="Equations of motion">equations of motion</a> for both ions and electrons. In this way an explicit electronic minimization at each time step, as done in Born-Oppenheimer MD, is not needed: after an initial standard electronic minimization, the fictitious dynamics of the electrons keeps them on the electronic <a href="/wiki/Ground_State" class="mw-redirect" title="Ground State">ground state</a> corresponding to each new ionic configuration visited along the dynamics, thus yielding accurate ionic forces. In order to maintain this <a href="/wiki/Adiabatic_process_(quantum_mechanics)" class="mw-redirect" title="Adiabatic process (quantum mechanics)">adiabaticity condition</a>, it is necessary that the fictitious mass of the electrons is chosen small enough to avoid a significant energy transfer from the ionic to the electronic degrees of freedom. This small fictitious mass in turn requires that the equations of motion are integrated using a smaller time step than the one (1&#8211;10&#160;fs) commonly used in Born&#8211;Oppenheimer molecular dynamics.
+</p>
+<h2><span class="mw-headline" id="General_approach">General approach</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=2" title="Edit section: General approach">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In CPMD the <a href="/wiki/Core_electron" title="Core electron">core electrons</a> are usually described by a <a href="/wiki/Pseudopotential" title="Pseudopotential">pseudopotential</a> and the <a href="/wiki/Wavefunction" class="mw-redirect" title="Wavefunction">wavefunction</a> of the <a href="/wiki/Valence_electron" title="Valence electron">valence electrons</a> are approximated by a <a href="/wiki/Basis_set_(chemistry)#Plane-wave_basis_sets" title="Basis set (chemistry)">plane wave basis set</a>.
+</p><p>The ground state electronic density (for fixed nuclei) is calculated self-consistently, usually using the <a href="/wiki/Density_functional_theory" title="Density functional theory">density functional theory</a> method. Then, using that density, forces on the nuclei can be computed, to update the trajectories (using, e.g. the <a href="/wiki/Verlet_integration" title="Verlet integration">Verlet integration</a> algorithm). In addition, however, the coefficients used to obtain the electronic orbital functions can be treated as a set of extra spatial dimensions, and trajectories for the orbitals can be calculated in this context.
+</p>
+<h2><span class="mw-headline" id="Fictitious_dynamics">Fictitious dynamics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=3" title="Edit section: Fictitious dynamics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>CPMD is an approximation of the Born–Oppenheimer <a href="/wiki/Molecular_dynamics" title="Molecular dynamics">MD</a> (BOMD) method. In BOMD, the electrons' wave function must be minimized via <a href="/wiki/Diagonalizable_matrix" title="Diagonalizable matrix">matrix diagonalization</a> at every step in the trajectory. CPMD uses fictitious dynamics<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> to keep the electrons close to the ground state, preventing the need for a costly self-consistent iterative minimization at each time step. The fictitious dynamics relies on the use of a fictitious electron mass (usually in the range of 400 – 800 <a href="/wiki/Atomic_units" class="mw-redirect" title="Atomic units">a.u.</a>) to ensure that there is very little energy transfer from nuclei to electrons, i.e. to ensure <a href="/wiki/Adiabatic_process" title="Adiabatic process">adiabaticity</a>. Any increase in the fictitious electron mass resulting in energy transfer would cause the system to leave the ground-state BOMD surface.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Lagrangian">Lagrangian</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=4" title="Edit section: Lagrangian">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\mathcal {L}}={\frac {1}{2}}\left(\sum _{I}^{\mathrm {nuclei} }\ M_{I}{\dot {\mathbf {R} }}_{I}^{2}+\mu \sum _{i}^{\mathrm {orbitals} }\int d\mathbf {r} \ |{\dot {\psi }}_{i}(\mathbf {r} ,t)|^{2}\right)-E\left[\{\psi _{i}\},\{\mathbf {R} _{I}\}\right],}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">L</mi>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>I</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">n</mi>
+                  <mi mathvariant="normal">u</mi>
+                  <mi mathvariant="normal">c</mi>
+                  <mi mathvariant="normal">l</mi>
+                  <mi mathvariant="normal">e</mi>
+                  <mi mathvariant="normal">i</mi>
+                </mrow>
+              </mrow>
+            </munderover>
+            <mtext>&#xA0;</mtext>
+            <msub>
+              <mi>M</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>I</mi>
+              </mrow>
+            </msub>
+            <msubsup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="bold">R</mi>
+                    </mrow>
+                    <mo>&#x02D9;<!-- ˙ --></mo>
+                  </mover>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>I</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+            <mo>+</mo>
+            <mi>&#x03BC;<!-- μ --></mi>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">o</mi>
+                  <mi mathvariant="normal">r</mi>
+                  <mi mathvariant="normal">b</mi>
+                  <mi mathvariant="normal">i</mi>
+                  <mi mathvariant="normal">t</mi>
+                  <mi mathvariant="normal">a</mi>
+                  <mi mathvariant="normal">l</mi>
+                  <mi mathvariant="normal">s</mi>
+                </mrow>
+              </mrow>
+            </munderover>
+            <mo>&#x222B;<!-- ∫ --></mo>
+            <mi>d</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">r</mi>
+            </mrow>
+            <mtext>&#xA0;</mtext>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mi>&#x03C8;<!-- ψ --></mi>
+                    <mo>&#x02D9;<!-- ˙ --></mo>
+                  </mover>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">r</mi>
+            </mrow>
+            <mo>,</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>E</mi>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mo fence="false" stretchy="false">{</mo>
+            <msub>
+              <mi>&#x03C8;<!-- ψ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mo fence="false" stretchy="false">}</mo>
+            <mo>,</mo>
+            <mo fence="false" stretchy="false">{</mo>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">R</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>I</mi>
+              </mrow>
+            </msub>
+            <mo fence="false" stretchy="false">}</mo>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {L}}={\frac {1}{2}}\left(\sum _{I}^{\mathrm {nuclei} }\ M_{I}{\dot {\mathbf {R} }}_{I}^{2}+\mu \sum _{i}^{\mathrm {orbitals} }\int d\mathbf {r} \ |{\dot {\psi }}_{i}(\mathbf {r} ,t)|^{2}\right)-E\left[\{\psi _{i}\},\{\mathbf {R} _{I}\}\right],}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32f5f677a70b944112a892d1c917600387172f32" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:66.139ex; height:7.509ex;" alt="{\mathcal  {L}}={\frac  {1}{2}}\left(\sum _{I}^{{{\mathrm  {nuclei}}}}\ M_{I}{\dot  {{\mathbf  {R}}}}_{I}^{2}+\mu \sum _{i}^{{{\mathrm  {orbitals}}}}\int d{\mathbf  r}\ |{\dot  {\psi }}_{i}({\mathbf  r},t)|^{2}\right)-E\left[\{\psi _{i}\},\{{\mathbf  R}_{I}\}\right],"/></span></dd></dl>
+<p>where <i>E</i>[{<i>ψ<sub>i</sub></i>},{<b>R</b><sub><i>I</i></sub>}] is the <a href="/wiki/Kohn%E2%80%93Sham_equations" title="Kohn–Sham equations">Kohn&#8211;Sham</a> energy density functional, which outputs energy values when given Kohn&#8211;Sham orbitals and nuclear positions.
+</p>
+<h3><span class="mw-headline" id="Orthogonality_constraint">Orthogonality constraint</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=5" title="Edit section: Orthogonality constraint">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \int d\mathbf {r} \ \psi _{i}^{*}(\mathbf {r} ,t)\psi _{j}(\mathbf {r} ,t)=\delta _{ij},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x222B;<!-- ∫ --></mo>
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mtext>&#xA0;</mtext>
+        <msubsup>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03B4;<!-- δ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \int d\mathbf {r} \ \psi _{i}^{*}(\mathbf {r} ,t)\psi _{j}(\mathbf {r} ,t)=\delta _{ij},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26eb7cf6548a1e4b209e271f16f4230501a2bf48" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:26.294ex; height:5.676ex;" alt="\int d{\mathbf  r}\ \psi _{i}^{*}({\mathbf  r},t)\psi _{j}({\mathbf  r},t)=\delta _{{ij}},"/></span></dd></dl>
+<p>where <i>&#948;<sub>ij</sub></i> is the <a href="/wiki/Kronecker_delta" title="Kronecker delta">Kronecker delta</a>.
+</p>
+<h3><span class="mw-headline" id="Equations_of_motion">Equations of motion</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=6" title="Edit section: Equations of motion">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The equations of motion are obtained by finding the stationary point of the Lagrangian under variations of <i>&#968;<sub>i</sub></i> and <b>R</b><sub><i>I</i></sub>, with the orthogonality constraint.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle M_{I}{\ddot {\mathbf {R} }}_{I}=-\nabla _{I}\,E\left[\{\psi _{i}\},\{\mathbf {R} _{I}\}\right]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>M</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>I</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="bold">R</mi>
+                </mrow>
+                <mo>&#x00A8;<!-- ¨ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>I</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>I</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mi>E</mi>
+        <mrow>
+          <mo>[</mo>
+          <mrow>
+            <mo fence="false" stretchy="false">{</mo>
+            <msub>
+              <mi>&#x03C8;<!-- ψ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mo fence="false" stretchy="false">}</mo>
+            <mo>,</mo>
+            <mo fence="false" stretchy="false">{</mo>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">R</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>I</mi>
+              </mrow>
+            </msub>
+            <mo fence="false" stretchy="false">}</mo>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M_{I}{\ddot {\mathbf {R} }}_{I}=-\nabla _{I}\,E\left[\{\psi _{i}\},\{\mathbf {R} _{I}\}\right]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f4d1b9a1c14f87b13d868220555cc901af5bd81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:29.186ex; height:3.176ex;" alt="{\displaystyle M_{I}{\ddot {\mathbf {R} }}_{I}=-\nabla _{I}\,E\left[\{\psi _{i}\},\{\mathbf {R} _{I}\}\right]}"/></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \mu {\ddot {\psi }}_{i}(\mathbf {r} ,t)=-{\frac {\delta E}{\delta \psi _{i}^{*}(\mathbf {r} ,t)}}+\sum _{j}\Lambda _{ij}\psi _{j}(\mathbf {r} ,t),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BC;<!-- μ --></mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>&#x03C8;<!-- ψ --></mi>
+                <mo>&#x00A8;<!-- ¨ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <mi>E</mi>
+            </mrow>
+            <mrow>
+              <mi>&#x03B4;<!-- δ --></mi>
+              <msubsup>
+                <mi>&#x03C8;<!-- ψ --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>&#x2217;<!-- ∗ --></mo>
+                </mrow>
+              </msubsup>
+              <mo stretchy="false">(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">r</mi>
+              </mrow>
+              <mo>,</mo>
+              <mi>t</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <munder>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi mathvariant="normal">&#x039B;<!-- Λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>&#x03C8;<!-- ψ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">r</mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mu {\ddot {\psi }}_{i}(\mathbf {r} ,t)=-{\frac {\delta E}{\delta \psi _{i}^{*}(\mathbf {r} ,t)}}+\sum _{j}\Lambda _{ij}\psi _{j}(\mathbf {r} ,t),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76b149f34391c84459e5619b097c640c53b519d1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:40.253ex; height:6.843ex;" alt="\mu {\ddot  {\psi }}_{i}({\mathbf  r},t)=-{\frac  {\delta E}{\delta \psi _{i}^{*}({\mathbf  r},t)}}+\sum _{j}\Lambda _{{ij}}\psi _{j}({\mathbf  r},t),"/></span></dd></dl>
+<p>where Λ<sub><i>ij</i></sub> is a Lagrangian multiplier matrix to comply with the orthonormality constraint.
+</p>
+<h3><span id="Born.E2.80.93Oppenheimer_limit"></span><span class="mw-headline" id="Born–Oppenheimer_limit">Born&#8211;Oppenheimer limit</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=7" title="Edit section: Born–Oppenheimer limit">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the formal limit where <i>&#956;</i>&#160;→&#160;0, the equations of motion approach Born&#8211;Oppenheimer molecular dynamics.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Application">Application</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=8" title="Edit section: Application">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol><li>Studying the behavior of water near a <a href="/wiki/Hydrophobic" class="mw-redirect" title="Hydrophobic">hydrophobic</a> <a href="/wiki/Graphene" title="Graphene">graphene</a> sheet.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup></li>
+<li>Investigating the structure and dynamics of liquid water at ambient temperature.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup></li>
+<li>Solving the <a href="/wiki/Heat_transfer_physics" title="Heat transfer physics">heat transfer problems</a> (<a href="/wiki/Heat_conduction" class="mw-redirect" title="Heat conduction">heat conduction</a> and <a href="/wiki/Thermal_radiation" title="Thermal radiation">thermal radiation</a>) between <a href="/wiki/Silicon-germanium" title="Silicon-germanium">Si/Ge</a> <a href="/wiki/Superlattice" title="Superlattice">superlattices</a>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup></li>
+<li>Probing the proton transfer along 1D water chains inside <a href="/wiki/Carbon_nanotubes" class="mw-redirect" title="Carbon nanotubes">carbon nanotubes</a>.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></li>
+<li>Evaluating the <a href="/wiki/Critical_point_(thermodynamics)" title="Critical point (thermodynamics)">critical point</a> of aluminum.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup></li>
+<li>Prediction of the <a href="/wiki/Amorphous" class="mw-redirect" title="Amorphous">amorphous</a> phase of the <a href="/wiki/Phase-change_memory" title="Phase-change memory">phase-change memory</a> material <a href="/wiki/GeSbTe" title="GeSbTe">GeSbTe</a>.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup></li></ol>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Computational_physics" title="Computational physics">Computational physics</a></li>
+<li><a href="/wiki/Density_functional_theory" title="Density functional theory">Density functional theory</a></li>
+<li><a href="/wiki/Computational_chemistry" title="Computational chemistry">Computational chemistry</a></li>
+<li><a href="/wiki/Molecular_dynamics" title="Molecular dynamics">Molecular dynamics</a></li>
+<li><a href="/wiki/Quantum_chemistry" title="Quantum chemistry">Quantum chemistry</a></li>
+<li><a href="/wiki/Ab_initio_quantum_chemistry_methods" title="Ab initio quantum chemistry methods">Ab initio quantum chemistry methods</a></li>
+<li><a href="/wiki/Quantum_chemistry_computer_programs" class="mw-redirect" title="Quantum chemistry computer programs">Quantum chemistry computer programs</a></li>
+<li><a href="/wiki/List_of_software_for_molecular_mechanics_modeling" class="mw-redirect" title="List of software for molecular mechanics modeling">List of software for molecular mechanics modeling</a></li>
+<li><a href="/wiki/List_of_quantum_chemistry_and_solid-state_physics_software" title="List of quantum chemistry and solid-state physics software">List of quantum chemistry and solid-state physics software</a></li>
+<li><a href="/wiki/CP2K" title="CP2K">CP2K</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFCarParrinello1985" class="citation journal">Car, R.; Parrinello, M (1985). "Unified Approach for Molecular Dynamics and Density-Functional Theory". <i>Physical Review Letters</i>. <b>55</b> (22): 2471–2474. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1985PhRvL..55.2471C">1985PhRvL..55.2471C</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevLett.55.2471">10.1103/PhysRevLett.55.2471</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/10032153">10032153</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Physical+Review+Letters&amp;rft.atitle=Unified+Approach+for+Molecular+Dynamics+and+Density-Functional+Theory&amp;rft.volume=55&amp;rft.issue=22&amp;rft.pages=2471-2474&amp;rft.date=1985&amp;rft_id=info%3Apmid%2F10032153&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.55.2471&amp;rft_id=info%3Abibcode%2F1985PhRvL..55.2471C&amp;rft.aulast=Car&amp;rft.aufirst=R.&amp;rft.au=Parrinello%2C+M&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r951705291">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background-image:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png");background-image:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg");background-repeat:no-repeat;background-size:12px;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.cpmd.org/">"CPMD.org"</a>. IBM, MPI Stuttgart, and CPMD Consortium<span class="reference-accessdate">. Retrieved <span class="nowrap">15 March</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=CPMD.org&amp;rft.pub=IBM%2C+MPI+Stuttgart%2C+and+CPMD+Consortium&amp;rft_id=http%3A%2F%2Fwww.cpmd.org%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite id="CITEREFDavid_J._E._CallawayAneesur_Rahman1982" class="citation journal">David J. E. Callaway; Aneesur Rahman (30 August 1982). "Microcanonical Ensemble Formulation of Lattice Gauge Theory". <i><a href="/wiki/Phys._Rev._Lett." class="mw-redirect" title="Phys. Rev. Lett.">Phys. Rev. Lett.</a></i> <b>49</b> (9): 613. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1982PhRvL..49..613C">1982PhRvL..49..613C</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevLett.49.613">10.1103/PhysRevLett.49.613</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Phys.+Rev.+Lett.&amp;rft.atitle=Microcanonical+Ensemble+Formulation+of+Lattice+Gauge+Theory&amp;rft.volume=49&amp;rft.issue=9&amp;rft.pages=613&amp;rft.date=1982-08-30&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.49.613&amp;rft_id=info%3Abibcode%2F1982PhRvL..49..613C&amp;rft.au=David+J.+E.+Callaway&amp;rft.au=Aneesur+Rahman&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite id="CITEREFThe_CPMD_Consortium" class="citation web">The CPMD Consortium. <a rel="nofollow" class="external text" href="http://www.cpmd.org/downloadable-files/no-authentication/manual.pdf">"Car-Parrinello Molecular Dynamics: An ab initio Electronic Structure and Molecular Dynamics Program"</a> <span class="cs1-format">(PDF)</span>. <i>Manual for CPMD version 3.15.1</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Manual+for+CPMD+version+3.15.1&amp;rft.atitle=Car-Parrinello+Molecular+Dynamics%3A+An+ab+initio+Electronic+Structure+and+Molecular+Dynamics+Program&amp;rft.au=The+CPMD+Consortium&amp;rft_id=http%3A%2F%2Fwww.cpmd.org%2Fdownloadable-files%2Fno-authentication%2Fmanual.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite id="CITEREFCallawayRahman1982" class="citation journal">Callaway, David; Rahman, Aneesur (1982). "Microcanonical Ensemble Formulation of Lattice Gauge Theory". <i>Physical Review Letters</i>. <b>49</b> (9): 613. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1982PhRvL..49..613C">1982PhRvL..49..613C</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevLett.49.613">10.1103/PhysRevLett.49.613</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Physical+Review+Letters&amp;rft.atitle=Microcanonical+Ensemble+Formulation+of+Lattice+Gauge+Theory&amp;rft.volume=49&amp;rft.issue=9&amp;rft.pages=613&amp;rft.date=1982&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.49.613&amp;rft_id=info%3Abibcode%2F1982PhRvL..49..613C&amp;rft.aulast=Callaway&amp;rft.aufirst=David&amp;rft.au=Rahman%2C+Aneesur&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite id="CITEREFKühne2014" class="citation journal">Kühne, Thomas D. (2014). "Second generation Car–Parrinello molecular dynamics". <i>WIREs Computational Molecular Science</i>. <b>4</b> (4): 391–406. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1201.5945">1201.5945</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1002%2Fwcms.1176">10.1002/wcms.1176</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=WIREs+Computational+Molecular+Science&amp;rft.atitle=Second+generation+Car%E2%80%93Parrinello+molecular+dynamics&amp;rft.volume=4&amp;rft.issue=4&amp;rft.pages=391-406&amp;rft.date=2014&amp;rft_id=info%3Aarxiv%2F1201.5945&amp;rft_id=info%3Adoi%2F10.1002%2Fwcms.1176&amp;rft.aulast=K%C3%BChne&amp;rft.aufirst=Thomas+D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite id="CITEREFKühneKrackMohamedParrinello2007" class="citation journal">Kühne, Thomas D.; Krack, Matthias; Mohamed, Fawzi R.; Parrinello, Michele (2007). "Efficient and Accurate Car-Parrinello-like Approach to Born-Oppenheimer Molecular Dynamics". <i>Physical Review Letters</i>. <b>98</b> (6): 066401. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/cond-mat/0610552">cond-mat/0610552</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2007PhRvL..98f6401K">2007PhRvL..98f6401K</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevLett.98.066401">10.1103/PhysRevLett.98.066401</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/17358962">17358962</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Physical+Review+Letters&amp;rft.atitle=Efficient+and+Accurate+Car-Parrinello-like+Approach+to+Born-Oppenheimer+Molecular+Dynamics&amp;rft.volume=98&amp;rft.issue=6&amp;rft.pages=066401&amp;rft.date=2007&amp;rft_id=info%3Aarxiv%2Fcond-mat%2F0610552&amp;rft_id=info%3Apmid%2F17358962&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.98.066401&amp;rft_id=info%3Abibcode%2F2007PhRvL..98f6401K&amp;rft.aulast=K%C3%BChne&amp;rft.aufirst=Thomas+D.&amp;rft.au=Krack%2C+Matthias&amp;rft.au=Mohamed%2C+Fawzi+R.&amp;rft.au=Parrinello%2C+Michele&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite id="CITEREFRanaChandra2013" class="citation journal">Rana, Malay Kumar; Chandra, Amalendu (2013-05-28). "Ab initio and classical molecular dynamics studies of the structural and dynamical behavior of water near a hydrophobic graphene sheet". <i>The Journal of Chemical Physics</i>. <b>138</b> (20): 204702. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2013JChPh.138t4702R">2013JChPh.138t4702R</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1063%2F1.4804300">10.1063/1.4804300</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/0021-9606">0021-9606</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/23742495">23742495</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Journal+of+Chemical+Physics&amp;rft.atitle=Ab+initio+and+classical+molecular+dynamics+studies+of+the+structural+and+dynamical+behavior+of+water+near+a+hydrophobic+graphene+sheet&amp;rft.volume=138&amp;rft.issue=20&amp;rft.pages=204702&amp;rft.date=2013-05-28&amp;rft_id=info%3Adoi%2F10.1063%2F1.4804300&amp;rft.issn=0021-9606&amp;rft_id=info%3Apmid%2F23742495&amp;rft_id=info%3Abibcode%2F2013JChPh.138t4702R&amp;rft.aulast=Rana&amp;rft.aufirst=Malay+Kumar&amp;rft.au=Chandra%2C+Amalendu&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite id="CITEREFLeeTuckerman2006" class="citation journal">Lee, Hee-Seung; Tuckerman, Mark E. (2006-10-21). "Structure of liquid water at ambient temperature from ab initio molecular dynamics performed in the complete basis set limit". <i>The Journal of Chemical Physics</i>. <b>125</b> (15): 154507. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2006JChPh.125o4507L">2006JChPh.125o4507L</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1063%2F1.2354158">10.1063/1.2354158</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/0021-9606">0021-9606</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/17059272">17059272</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Journal+of+Chemical+Physics&amp;rft.atitle=Structure+of+liquid+water+at+ambient+temperature+from+ab+initio+molecular+dynamics+performed+in+the+complete+basis+set+limit&amp;rft.volume=125&amp;rft.issue=15&amp;rft.pages=154507&amp;rft.date=2006-10-21&amp;rft_id=info%3Adoi%2F10.1063%2F1.2354158&amp;rft.issn=0021-9606&amp;rft_id=info%3Apmid%2F17059272&amp;rft_id=info%3Abibcode%2F2006JChPh.125o4507L&amp;rft.aulast=Lee&amp;rft.aufirst=Hee-Seung&amp;rft.au=Tuckerman%2C+Mark+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite id="CITEREFKühneKrackParrinello2009" class="citation journal">Kühne, Thomas D.; Krack, Matthias; Parrinello, Michele (2009). "Static and Dynamical Properties of Liquid Water from First Principles by a Novel Car−Parrinello-like Approach". <i>Journal of Chemical Theory and Computation</i>. <b>5</b> (2): 235–241. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1021%2Fct800417q">10.1021/ct800417q</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/26610101">26610101</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Chemical+Theory+and+Computation&amp;rft.atitle=Static+and+Dynamical+Properties+of+Liquid+Water+from+First+Principles+by+a+Novel+Car%E2%88%92Parrinello-like+Approach&amp;rft.volume=5&amp;rft.issue=2&amp;rft.pages=235-241&amp;rft.date=2009&amp;rft_id=info%3Adoi%2F10.1021%2Fct800417q&amp;rft_id=info%3Apmid%2F26610101&amp;rft.aulast=K%C3%BChne&amp;rft.aufirst=Thomas+D.&amp;rft.au=Krack%2C+Matthias&amp;rft.au=Parrinello%2C+Michele&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite id="CITEREFJiZhang2013" class="citation journal">Ji, Pengfei; Zhang, Yuwen (2013-05-01). "First-principles molecular dynamics investigation of the atomic-scale energy transport: From heat conduction to thermal radiation". <i>International Journal of Heat and Mass Transfer</i>. <b>60</b>: 69–80. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1602.00326">1602.00326</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.ijheatmasstransfer.2012.12.051">10.1016/j.ijheatmasstransfer.2012.12.051</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=International+Journal+of+Heat+and+Mass+Transfer&amp;rft.atitle=First-principles+molecular+dynamics+investigation+of+the+atomic-scale+energy+transport%3A+From+heat+conduction+to+thermal+radiation&amp;rft.volume=60&amp;rft.pages=69-80&amp;rft.date=2013-05-01&amp;rft_id=info%3Aarxiv%2F1602.00326&amp;rft_id=info%3Adoi%2F10.1016%2Fj.ijheatmasstransfer.2012.12.051&amp;rft.aulast=Ji&amp;rft.aufirst=Pengfei&amp;rft.au=Zhang%2C+Yuwen&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite id="CITEREFJiZhangYang2013" class="citation journal">Ji, Pengfei; Zhang, Yuwen; Yang, Mo (2013-12-21). "Structural, dynamic, and vibrational properties during heat transfer in Si/Ge superlattices: A Car-Parrinello molecular dynamics study". <i>Journal of Applied Physics</i>. <b>114</b> (23): 234905–234905–10. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1602.00330">1602.00330</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2013JAP...114w4905J">2013JAP...114w4905J</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1063%2F1.4850935">10.1063/1.4850935</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/0021-8979">0021-8979</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Applied+Physics&amp;rft.atitle=Structural%2C+dynamic%2C+and+vibrational+properties+during+heat+transfer+in+Si%2FGe+superlattices%3A+A+Car-Parrinello+molecular+dynamics+study&amp;rft.volume=114&amp;rft.issue=23&amp;rft.pages=234905-234905-10&amp;rft.date=2013-12-21&amp;rft_id=info%3Aarxiv%2F1602.00330&amp;rft.issn=0021-8979&amp;rft_id=info%3Adoi%2F10.1063%2F1.4850935&amp;rft_id=info%3Abibcode%2F2013JAP...114w4905J&amp;rft.aulast=Ji&amp;rft.aufirst=Pengfei&amp;rft.au=Zhang%2C+Yuwen&amp;rft.au=Yang%2C+Mo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite id="CITEREFDellago2003" class="citation journal">Dellago, Christoph (2003-01-01). "Proton Transport through Water-Filled Carbon Nanotubes". <i>Physical Review Letters</i>. <b>90</b> (10): 105902. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2003PhRvL..90j5902D">2003PhRvL..90j5902D</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevLett.90.105902">10.1103/PhysRevLett.90.105902</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/12689010">12689010</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Physical+Review+Letters&amp;rft.atitle=Proton+Transport+through+Water-Filled+Carbon+Nanotubes&amp;rft.volume=90&amp;rft.issue=10&amp;rft.pages=105902&amp;rft.date=2003-01-01&amp;rft_id=info%3Apmid%2F12689010&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.90.105902&amp;rft_id=info%3Abibcode%2F2003PhRvL..90j5902D&amp;rft.aulast=Dellago&amp;rft.aufirst=Christoph&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite id="CITEREFFaussurierBlancardSilvestrelli2009" class="citation journal">Faussurier, Gérald; Blancard, Christophe; Silvestrelli, Pier Luigi (2009-04-03). "Evaluation of aluminum critical point using an \textit{ab initio} variational approach". <i>Physical Review B</i>. <b>79</b> (13): 134202. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2009PhRvB..79m4202F">2009PhRvB..79m4202F</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevB.79.134202">10.1103/PhysRevB.79.134202</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Physical+Review+B&amp;rft.atitle=Evaluation+of+aluminum+critical+point+using+an+%5Ctextit%7Bab+initio%7D+variational+approach&amp;rft.volume=79&amp;rft.issue=13&amp;rft.pages=134202&amp;rft.date=2009-04-03&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevB.79.134202&amp;rft_id=info%3Abibcode%2F2009PhRvB..79m4202F&amp;rft.aulast=Faussurier&amp;rft.aufirst=G%C3%A9rald&amp;rft.au=Blancard%2C+Christophe&amp;rft.au=Silvestrelli%2C+Pier+Luigi&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><cite id="CITEREFCaravatiBernasconiKühneKrack2007" class="citation journal">Caravati, Sebastiano; Bernasconi, Marco; Kühne, Thomas D.; Krack, Matthias; Parrinello, Michele (2007). "Coexistence of tetrahedral- and octahedral-like sites in amorphous phase change materials". <i>Applied Physics Letters</i>. <b>91</b> (17): 171906. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/0708.1302">0708.1302</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2007ApPhL..91q1906C">2007ApPhL..91q1906C</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1063%2F1.2801626">10.1063/1.2801626</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Applied+Physics+Letters&amp;rft.atitle=Coexistence+of+tetrahedral-+and+octahedral-like+sites+in+amorphous+phase+change+materials&amp;rft.volume=91&amp;rft.issue=17&amp;rft.pages=171906&amp;rft.date=2007&amp;rft_id=info%3Aarxiv%2F0708.1302&amp;rft_id=info%3Adoi%2F10.1063%2F1.2801626&amp;rft_id=info%3Abibcode%2F2007ApPhL..91q1906C&amp;rft.aulast=Caravati&amp;rft.aufirst=Sebastiano&amp;rft.au=Bernasconi%2C+Marco&amp;rft.au=K%C3%BChne%2C+Thomas+D.&amp;rft.au=Krack%2C+Matthias&amp;rft.au=Parrinello%2C+Michele&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACar%E2%80%93Parrinello+molecular+dynamics" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external free" href="http://www.cpmd.org/">http://www.cpmd.org/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.cp2k.org/">http://www.cp2k.org/</a></li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Computational_chemistry_software" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Chemistry_software" title="Template:Chemistry software"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Chemistry_software" title="Template talk:Chemistry software"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Chemistry_software&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Computational_chemistry_software" style="font-size:114%;margin:0 4em"><a href="/wiki/Computational_chemistry" title="Computational chemistry">Computational chemistry</a> software</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Cheminformatics" title="Cheminformatics">Cheminformatics</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Open-source_software" title="Open-source software">Open-source</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/w/index.php?title=Avalon_Cheminformatics_Toolkit&amp;action=edit&amp;redlink=1" class="new" title="Avalon Cheminformatics Toolkit (page does not exist)">Avalon Cheminformatics Toolkit</a></li>
+<li><a href="/wiki/Bioclipse" title="Bioclipse">Bioclipse</a></li>
+<li><a href="/wiki/Blue_Obelisk" title="Blue Obelisk">Blue Obelisk</a></li>
+<li><a href="/wiki/Chemistry_Development_Kit" title="Chemistry Development Kit">Chemistry Development Kit</a></li>
+<li><a href="/wiki/Extensible_Computational_Chemistry_Environment" title="Extensible Computational Chemistry Environment">ECCE</a></li>
+<li><a href="/wiki/JOELib" title="JOELib">JOELib</a></li>
+<li><a href="/wiki/OELib" title="OELib">OELib</a></li>
+<li><a href="/wiki/Open_Babel" title="Open Babel">Open Babel</a></li>
+<li><a href="/w/index.php?title=RDKit&amp;action=edit&amp;redlink=1" class="new" title="RDKit (page does not exist)">RDKit</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Schr%C3%B6dinger_(company)" title="Schrödinger (company)">Canvas</a></li>
+<li><a href="/wiki/Chemicalize" title="Chemicalize">Chemicalize</a></li>
+<li><a href="/wiki/Discovery_Studio" title="Discovery Studio">Discovery Studio</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Chemical_kinetics" title="Chemical kinetics">Chemical kinetics</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Open-source</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/APBS_(software)" title="APBS (software)">APBS</a></li>
+<li><a href="/wiki/Cantera_(software)" title="Cantera (software)">Cantera</a></li>
+<li><a href="/wiki/Kinetic_PreProcessor" title="Kinetic PreProcessor">KPP</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Proprietary</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Autochem" title="Autochem">Autochem</a></li>
+<li><a href="/wiki/Chemical_WorkBench" title="Chemical WorkBench">Chemical WorkBench</a></li>
+<li><a href="/wiki/CHEMKIN" title="CHEMKIN">CHEMKIN</a></li>
+<li><a href="/wiki/COSILAB" title="COSILAB">COSILAB</a></li>
+<li><a href="/wiki/DelPhi_(software)" class="mw-redirect" title="DelPhi (software)">DelPhi</a></li>
+<li><a href="/wiki/Khimera" title="Khimera">Khimera</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Molecular_modelling" title="Molecular modelling">Molecular modelling</a> and <a href="/wiki/Visualization_(graphics)" title="Visualization (graphics)">visualization</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"><a href="/wiki/List_of_molecular_graphics_systems" title="List of molecular graphics systems">List of molecular graphics systems</a>
+  </div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Open-source</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Ascalaph_Designer" title="Ascalaph Designer">Ascalaph Designer</a></li>
+<li><a href="/wiki/Avogadro_(software)" title="Avogadro (software)">Avogadro</a></li>
+<li><a href="/wiki/BALL" title="BALL">BALL</a></li>
+<li><a href="/wiki/Biskit" title="Biskit">Biskit</a></li>
+<li><a class="mw-selflink selflink">CPMD</a></li>
+<li><a href="/wiki/Gabedit" title="Gabedit">Gabedit</a></li>
+<li><a href="/wiki/Ghemical" title="Ghemical">Ghemical</a></li>
+<li><a href="/wiki/Jmol" title="Jmol">Jmol</a></li>
+<li><a href="/wiki/Molekel" title="Molekel">Molekel</a></li>
+<li><a href="/wiki/PyMOL" title="PyMOL">PyMOL</a></li>
+<li><a href="/wiki/QuteMol" title="QuteMol">QuteMol</a></li>
+<li><a href="/wiki/RasMol" title="RasMol">RasMol</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Proprietary</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Abalone_(molecular_mechanics)" title="Abalone (molecular mechanics)">Abalone</a></li>
+<li><a href="/wiki/ACD/ChemSketch" title="ACD/ChemSketch">ACD/ChemSketch</a></li>
+<li><a href="/wiki/Atomistix_ToolKit" title="Atomistix ToolKit">Atomistix ToolKit</a></li>
+<li><a href="/wiki/ChemDraw" title="ChemDraw">ChemDraw</a></li>
+<li><a href="/wiki/EzMol" title="EzMol">EzMol</a></li>
+<li><a href="/wiki/Gaussian_(software)" title="Gaussian (software)">Gaussian</a></li>
+<li><a href="/wiki/Schr%C3%B6dinger_(company)" title="Schrödinger (company)">Maestro</a></li>
+<li><a href="/wiki/MarvinSketch" class="mw-redirect" title="MarvinSketch">MarvinSketch</a></li>
+<li><a href="/wiki/MarvinView" class="mw-redirect" title="MarvinView">MarvinView</a></li>
+<li><a href="/wiki/MODELLER" title="MODELLER">MODELLER</a></li>
+<li><a href="/wiki/Molecular_Operating_Environment" title="Molecular Operating Environment">Molecular Operating Environment</a></li>
+<li><a href="/wiki/Spartan_(chemistry_software)" title="Spartan (chemistry software)">Spartan</a></li>
+<li><a href="/wiki/UCSF_Chimera" title="UCSF Chimera">UCSF Chimera</a></li>
+<li><a href="/wiki/Visual_Molecular_Dynamics" title="Visual Molecular Dynamics">VMD</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Docking_(molecular)" title="Docking (molecular)">Molecular docking</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"><a href="/wiki/List_of_protein-ligand_docking_software" title="List of protein-ligand docking software">List of protein-ligand docking software</a>
+  </div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Open-source_software" title="Open-source software">Open-source</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/AutoDock" title="AutoDock">AutoDock</a></li>
+<li><a href="/wiki/AutoDock_Vina" class="mw-redirect" title="AutoDock Vina">AutoDock Vina</a></li>
+<li><a href="/wiki/FlexAID" title="FlexAID">FlexAID</a></li>
+<li><a href="/wiki/RDock" title="RDock">rDock</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Schr%C3%B6dinger_(company)" title="Schrödinger (company)">Glide</a></li>
+<li><a href="/wiki/LeDock" title="LeDock">LeDock</a></li>
+<li><a href="/wiki/Molecular_Operating_Environment" title="Molecular Operating Environment">Molecular Operating Environment</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Molecular_dynamics" title="Molecular dynamics">Molecular dynamics</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Open-source_software" title="Open-source software">Open-source</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/CP2K" title="CP2K">CP2K</a></li>
+<li><a href="/wiki/GROMACS" title="GROMACS">GROMACS</a></li>
+<li><a href="/wiki/LAMMPS" title="LAMMPS">LAMMPS</a></li>
+<li><a href="/wiki/OpenMM" class="mw-redirect" title="OpenMM">OpenMM</a></li>
+<li><a href="/wiki/PLUMED" title="PLUMED">PLUMED</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Abalone_(molecular_mechanics)" title="Abalone (molecular mechanics)">Abalone</a></li>
+<li><a href="/wiki/AMBER" title="AMBER">AMBER</a></li>
+<li><a href="/wiki/CHARMM" title="CHARMM">CHARMM</a></li>
+<li><a href="/wiki/Desmond_(software)" title="Desmond (software)">Desmond</a></li>
+<li><a href="/wiki/GROMOS" title="GROMOS">GROMOS</a></li>
+<li><a href="/wiki/NAMD" title="NAMD">NAMD</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Quantum_chemistry" title="Quantum chemistry">Quantum chemistry</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"><a href="/wiki/List_of_quantum_chemistry_and_solid-state_physics_software" title="List of quantum chemistry and solid-state physics software">List of quantum chemistry and solid-state physics software</a>
+  </div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Open-source</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/ABINIT" title="ABINIT">ABINIT</a></li>
+<li><a href="/wiki/ACES_(computational_chemistry)" title="ACES (computational chemistry)">ACES</a> (CFOUR)</li>
+<li><a href="/wiki/AIMAll" title="AIMAll">AIMAll</a></li>
+<li><a href="/wiki/BigDFT" title="BigDFT">BigDFT</a></li>
+<li><a href="/wiki/CP2K" title="CP2K">CP2K</a></li>
+<li><a href="/wiki/DACAPO" title="DACAPO">DACAPO</a></li>
+<li><a href="/wiki/Dalton_(program)" title="Dalton (program)">Dalton</a></li>
+<li><a href="/wiki/DP_code" title="DP code">DP code</a></li>
+<li><a href="/wiki/FreeON" title="FreeON">FreeON</a></li>
+<li><a href="/wiki/HORTON_(software)" title="HORTON (software)">HORTON</a></li>
+<li><a href="/wiki/MADNESS" title="MADNESS">MADNESS</a></li>
+<li><a href="/wiki/MPQC" title="MPQC">MPQC</a></li>
+<li><a href="/wiki/NWChem" title="NWChem">NWChem</a></li>
+<li><a href="/wiki/Octopus_(software)" title="Octopus (software)">Octopus</a></li>
+<li><a href="/wiki/PSI_(computational_chemistry)" title="PSI (computational chemistry)">PSI</a></li>
+<li><a href="/wiki/PyQuante" title="PyQuante">PyQuante</a></li>
+<li><a href="/wiki/PySCF" title="PySCF">PySCF</a></li>
+<li><a href="/wiki/Quantum_ESPRESSO" title="Quantum ESPRESSO">Quantum ESPRESSO</a> (PWscf)</li>
+<li><a href="/wiki/RMG_(program)" title="RMG (program)">RMG</a></li>
+<li><a href="/wiki/SAMSON" title="SAMSON">SAMSON</a></li>
+<li><a href="/wiki/SIESTA_(computer_program)" title="SIESTA (computer program)">SIESTA</a></li>
+<li><a href="/wiki/Valence_bond_programs" title="Valence bond programs">VB2000</a></li>
+<li><a href="/wiki/YAMBO_code" title="YAMBO code">YAMBO code</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Proprietary</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Amsterdam_Density_Functional" title="Amsterdam Density Functional">ADF</a></li>
+<li><a href="/wiki/AMPAC" title="AMPAC">AMPAC</a></li>
+<li><a href="/wiki/DMol3" title="DMol3">DMol3</a></li>
+<li><a href="/wiki/CADPAC" title="CADPAC">CADPAC</a></li>
+<li><a href="/wiki/CASINO" title="CASINO">CASINO</a></li>
+<li><a href="/wiki/CASTEP" title="CASTEP">CASTEP</a></li>
+<li><a href="/wiki/COLUMBUS" title="COLUMBUS">COLUMBUS</a></li>
+<li><a href="/wiki/CONQUEST" title="CONQUEST">CONQUEST</a></li>
+<li><a class="mw-selflink selflink">CPMD</a></li>
+<li><a href="/wiki/Valence_bond_programs" title="Valence bond programs">CRUNCH</a></li>
+<li><a href="/wiki/Crystal_(software)" title="Crystal (software)">CRYSTAL</a></li>
+<li><a href="/wiki/Dirac_(software)" title="Dirac (software)">DIRAC</a></li>
+<li><a href="/wiki/Firefly_(computer_program)" title="Firefly (computer program)">Firefly</a></li>
+<li><a href="/wiki/GAMESS_(UK)" title="GAMESS (UK)">GAMESS (UK)</a></li>
+<li><a href="/wiki/GAMESS_(US)" title="GAMESS (US)">GAMESS (US)</a></li>
+<li><a href="/wiki/Gaussian_(software)" title="Gaussian (software)">Gaussian</a></li>
+<li><a href="/wiki/Jaguar_(software)" title="Jaguar (software)">Jaguar</a></li>
+<li><a href="/wiki/MOLCAS" title="MOLCAS">MOLCAS</a></li>
+<li><a href="/wiki/MOLPRO" title="MOLPRO">MOLPRO</a></li>
+<li><a href="/wiki/MOPAC" title="MOPAC">MOPAC</a></li>
+<li><a href="/wiki/ONETEP" title="ONETEP">ONETEP</a></li>
+<li><a href="/wiki/OpenAtom" title="OpenAtom">OpenAtom</a></li>
+<li><a href="/wiki/ORCA_(quantum_chemistry_program)" title="ORCA (quantum chemistry program)">ORCA</a></li>
+<li><a href="/wiki/PARSEC" title="PARSEC">PARSEC</a></li>
+<li><a href="/wiki/PLATO_(computational_chemistry)" title="PLATO (computational chemistry)">PLATO</a></li>
+<li><a href="/wiki/PQS_(software)" title="PQS (software)">PQS</a></li>
+<li><a href="/wiki/Q-Chem" title="Q-Chem">Q-Chem</a></li>
+<li><a href="/wiki/Quantemol" title="Quantemol">Quantemol</a></li>
+<li><a href="/wiki/Scigress" title="Scigress">Scigress</a></li>
+<li><a href="/wiki/Spartan_(chemistry_software)" title="Spartan (chemistry software)">Spartan</a></li>
+<li><a href="/wiki/TeraChem" title="TeraChem">TeraChem</a></li>
+<li><a href="/wiki/TURBOMOLE" title="TURBOMOLE">TURBOMOLE</a></li>
+<li><a href="/wiki/Vienna_Ab_initio_Simulation_Package" title="Vienna Ab initio Simulation Package">VASP</a></li>
+<li><a href="/wiki/WIEN2k" title="WIEN2k">WIEN2k</a></li>
+<li><a href="/wiki/Valence_bond_programs" title="Valence bond programs">XMVB</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Skeletal_structure" class="mw-redirect" title="Skeletal structure">Skeletal structure</a> drawing</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Open-source</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/BKChem" title="BKChem">BKChem</a></li>
+<li><a href="/wiki/JChemPaint" title="JChemPaint">JChemPaint</a></li>
+<li><a href="/wiki/JME_Molecule_Editor" title="JME Molecule Editor">JME Molecule Editor</a></li>
+<li><a href="/w/index.php?title=Molsketch&amp;action=edit&amp;redlink=1" class="new" title="Molsketch (page does not exist)">Molsketch</a></li>
+<li><a href="/wiki/XDrawChem" title="XDrawChem">XDrawChem</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Proprietary</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/ACD/ChemSketch" title="ACD/ChemSketch">ACD/ChemSketch</a></li>
+<li><a href="/w/index.php?title=ChemDoodle&amp;action=edit&amp;redlink=1" class="new" title="ChemDoodle (page does not exist)">ChemDoodle</a></li>
+<li><a href="/wiki/ChemDraw" title="ChemDraw">ChemDraw</a></li>
+<li><a href="/wiki/MarvinSketch" class="mw-redirect" title="MarvinSketch">MarvinSketch</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Others</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Aqion" title="Aqion">Aqion</a></li>
+<li><a href="/wiki/Eulim" title="Eulim">Eulim</a></li>
+<li><a href="/wiki/EXC_code" title="EXC code">EXC code</a></li>
+<li><a href="/w/index.php?title=GenX_(software)&amp;action=edit&amp;redlink=1" class="new" title="GenX (software) (page does not exist)">GenX</a></li>
+<li><a href="/w/index.php?title=GSim&amp;action=edit&amp;redlink=1" class="new" title="GSim (page does not exist)">GSim</a></li>
+<li><a href="/wiki/Internal_Coordinate_Mechanics" title="Internal Coordinate Mechanics">ICM</a> (ICM-Browser)</li>
+<li><a href="/wiki/Materials_Studio" title="Materials Studio">Materials Studio</a></li>
+<li><a href="/wiki/Molden" title="Molden">Molden</a></li>
+<li><a href="/wiki/OpenChrom" title="OpenChrom">OpenChrom</a></li>
+<li><a href="/wiki/Rubychem" title="Rubychem">RubyChem</a></li>
+<li><a href="/w/index.php?title=SASHIMI&amp;action=edit&amp;redlink=1" class="new" title="SASHIMI (page does not exist)">SASHIMI</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1361
+Cached time: 20200425203709
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.280 seconds
+Real time usage: 0.346 seconds
+Preprocessor visited node count: 1103/1000000
+Post‐expand include size: 82437/2097152 bytes
+Template argument size: 99/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 64971/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.149/10.000 seconds
+Lua memory usage: 3.38 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  243.636      1 -total
+ 83.49%  203.406      1 Template:Reflist
+ 70.80%  172.493     13 Template:Cite_journal
+ 22.72%   55.356      8 Template:Navbox
+ 16.47%   40.123      1 Template:Chemistry_software
+  3.34%    8.132      2 Template:Cite_web
+  1.09%    2.653      1 Template:Main_other
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:6770335-0!canonical!math=5 and timestamp 20200425203715 and revision id 953126039
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Car–Parrinello_molecular_dynamics&amp;oldid=953126039">https://en.wikipedia.org/w/index.php?title=Car–Parrinello_molecular_dynamics&amp;oldid=953126039</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Density_functional_theory" title="Category:Density functional theory">Density functional theory</a></li><li><a href="/wiki/Category:Density_functional_theory_software" title="Category:Density functional theory software">Density functional theory software</a></li><li><a href="/wiki/Category:Computational_chemistry" title="Category:Computational chemistry">Computational chemistry</a></li><li><a href="/wiki/Category:Computational_chemistry_software" title="Category:Computational chemistry software">Computational chemistry software</a></li><li><a href="/wiki/Category:Molecular_dynamics" title="Category:Molecular dynamics">Molecular dynamics</a></li><li><a href="/wiki/Category:Molecular_dynamics_software" title="Category:Molecular dynamics software">Molecular dynamics software</a></li><li><a href="/wiki/Category:Quantum_chemistry" title="Category:Quantum chemistry">Quantum chemistry</a></li><li><a href="/wiki/Category:Theoretical_chemistry" title="Category:Theoretical chemistry">Theoretical chemistry</a></li><li><a href="/wiki/Category:Mathematical_chemistry" title="Category:Mathematical chemistry">Mathematical chemistry</a></li><li><a href="/wiki/Category:Simulation_software" title="Category:Simulation software">Simulation software</a></li><li><a href="/wiki/Category:Scientific_simulation_software" title="Category:Scientific simulation software">Scientific simulation software</a></li><li><a href="/wiki/Category:Physics_software" title="Category:Physics software">Physics software</a></li><li><a href="/wiki/Category:Chemistry_software" title="Category:Chemistry software">Chemistry software</a></li><li><a href="/wiki/Category:Science_software" title="Category:Science software">Science software</a></li><li><a href="/wiki/Category:Algorithms" title="Category:Algorithms">Algorithms</a></li><li><a href="/wiki/Category:Computational_physics" title="Category:Computational physics">Computational physics</a></li><li><a href="/wiki/Category:Electronic_structure_methods" title="Category:Electronic structure methods">Electronic structure methods</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul >
+		<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Car%E2%80%93Parrinello+molecular+dynamics" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Car%E2%80%93Parrinello+molecular+dynamics" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+		<div id="left-navigation">
+			<div id="p-namespaces" role="navigation" class="vectorTabs " aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="/wiki/Car%E2%80%93Parrinello_molecular_dynamics" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="/wiki/Talk:Car%E2%80%93Parrinello_molecular_dynamics" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li>
+	</ul>
+</div>
+
+			<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+		</div>
+		<div id="right-navigation">
+			<div id="p-views" role="navigation" class="vectorTabs " aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="/wiki/Car%E2%80%93Parrinello_molecular_dynamics">Read</a></li><li id="ca-edit" class="collapsible"><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="collapsible"><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+	</ul>
+</div>
+
+			<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Search" name="title"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="/wiki/Main_Page"></a>
+	</div>
+	<div class="portal" role="navigation" id="p-navigation"  aria-labelledby="p-navigation-label">
+	<h3  id="p-navigation-label">
+		Navigation
+	</h3>
+	<div class="body">
+		<ul><li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Wikipedia:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li></ul>
+		
+	</div>
+</div>
+
+
+	<div class="portal" role="navigation" id="p-interaction"  aria-labelledby="p-interaction-label">
+	<h3  id="p-interaction-label">
+		Interaction
+	</h3>
+	<div class="body">
+		<ul><li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-tb"  aria-labelledby="p-tb-label">
+	<h3  id="p-tb-label">
+		Tools
+	</h3>
+	<div class="body">
+		<ul><li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Car%E2%80%93Parrinello_molecular_dynamics" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Car%E2%80%93Parrinello_molecular_dynamics" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;oldid=953126039" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4300351" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Car%E2%80%93Parrinello_molecular_dynamics&amp;id=953126039&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-coll-print_export"  aria-labelledby="p-coll-print_export-label">
+	<h3  id="p-coll-print_export-label">
+		Print/export
+	</h3>
+	<div class="body">
+		<ul><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Car%E2%80%93Parrinello+molecular+dynamics">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Car%E2%80%93Parrinello+molecular+dynamics&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-lang"  aria-labelledby="p-lang-label">
+	<h3  id="p-lang-label">
+		Languages
+	</h3>
+	<div class="body">
+		<ul><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0_%D0%9A%D0%B0%D1%80%D0%B0_%E2%80%94_%D0%9F%D0%B0%D1%80%D1%80%D0%B8%D0%BD%D0%B5%D0%BB%D0%BB%D0%BE" title="Молекулярная динамика Кара — Парринелло – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0_%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D1%96%D0%BA%D0%B0_%D0%9A%D0%B0%D1%80%D0%B0_%E2%80%94_%D0%9F%D0%B0%D1%80%D1%80%D1%96%D0%BD%D0%B5%D0%BB%D0%BB%D0%BE" title="Молекулярна динаміка Кара — Паррінелло – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4300351#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div id="footer" role="contentinfo" >
+	<ul id="footer-info" class="">
+		<li id="footer-info-lastmod"> This page was last edited on 25 April 2020, at 20:37<span class="anonymous-show">&#160;(UTC)</span>.</li>
+		<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+	</ul>
+	<ul id="footer-places" class="">
+		<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+		<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+		<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+		<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+		<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+		<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Car%E2%80%93Parrinello_molecular_dynamics&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</div>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.280","walltime":"0.346","ppvisitednodes":{"value":1103,"limit":1000000},"postexpandincludesize":{"value":82437,"limit":2097152},"templateargumentsize":{"value":99,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":64971,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  243.636      1 -total"," 83.49%  203.406      1 Template:Reflist"," 70.80%  172.493     13 Template:Cite_journal"," 22.72%   55.356      8 Template:Navbox"," 16.47%   40.123      1 Template:Chemistry_software","  3.34%    8.132      2 Template:Cite_web","  1.09%    2.653      1 Template:Main_other"]},"scribunto":{"limitreport-timeusage":{"value":"0.149","limit":"10.000"},"limitreport-memusage":{"value":3545245,"limit":52428800}},"cachereport":{"origin":"mw1361","timestamp":"20200425203709","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Car\u2013Parrinello molecular dynamics","url":"https:\/\/en.wikipedia.org\/wiki\/Car%E2%80%93Parrinello_molecular_dynamics","sameAs":"http:\/\/www.wikidata.org\/entity\/Q4300351","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q4300351","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2006-08-30T19:31:17Z","dateModified":"2020-04-25T20:37:15Z","headline":"computational chemistry software package"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":76,"wgHostname":"mw1389"});});</script></body></html>
