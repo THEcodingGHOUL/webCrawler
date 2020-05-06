@@ -4,7 +4,7 @@ class wikipediaSpider(scrapy.Spider):
     start_urls = [
         'https://en.wikipedia.org/wiki/Information_retrieval'
     ]
-
+# hello
     def parse(self,response):
         page = response.url.split('/')[-1]
         filename = 'webdoc-%s.html' % page
